@@ -22,8 +22,8 @@ A power type defines how an instance of a power should function. It also contain
 - `hud_render`
 - `inventory`
 - `modify/air/speed`
-- `modify/attribute`
 - `modify/attribute/vanilla`
+- `modify/attribute`
 - `modify/block/harvestable`
 - `modify/block/selectable`
 - `modify/block/use`
