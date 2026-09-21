@@ -5,6 +5,10 @@ on:
     branches-ignore:
       - 'main'
       - 'gh-pages'
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 env:
   BRANCH_NAME: ${{ github.ref_name }}
 jobs:
