@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_power_removed/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_power_tick/">
       
       
-        <link rel="prev" href="../callback_power_granted/">
+        <link rel="prev" href="../callback_power_revoked/">
       
-      
-        <link rel="next" href="../callback_power_revoked/">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>Callback Power Removed - neo-apoli Documentation</title>
+        <title>Callback Power Tick - neo-apoli Documentation</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#callback_power_removed" class="md-skip">
+        <a href="#callback_power_tick" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Callback Power Removed
+              Callback Power Tick
             
           </span>
         </div>
@@ -786,6 +784,62 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../callback_power_removed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callback Power Removed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../callback_power_revoked/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callback Power Revoked
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -805,7 +859,7 @@
   <span class="md-ellipsis">
     
   
-    Callback Power Removed
+    Callback Power Tick
   
 
     
@@ -823,7 +877,7 @@
   <span class="md-ellipsis">
     
   
-    Callback Power Removed
+    Callback Power Tick
   
 
     
@@ -885,62 +939,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../callback_power_revoked/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Callback Power Revoked
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../callback_power_tick/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Callback Power Tick
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -1040,12 +1038,9 @@
   
 
 
-<h1 id="callback_power_removed">Callback Power Removed</h1>
-<p class="annotate">Invokes an action upon "removing" the power (1) from the entity.</p>
-<ol>
-<li>"Removing"/"removed" in this context means that the power is revoked for the Nth or last time.</li>
-</ol>
-<p>Type ID: <code>neo-apoli:callback/power/removed</code></p>
+<h1 id="callback_power_tick">Callback Power Tick</h1>
+<p>Invokes an action every time the power ticks.</p>
+<p>Type ID: <code>neo-apoli:callback/power/tick</code></p>
 <h3 id="format">Format</h3>
 <table>
 <thead>
@@ -1060,25 +1055,41 @@
 <tr>
 <td><code>action</code></td>
 <td>Action</td>
-<td style="text-align: center;"></td>
-<td>The action to invoke after the power is "removed" from the entity.</td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>If specified, this action will be invoked every interval ticks.</td>
+</tr>
+<tr>
+<td><code>rising_action</code></td>
+<td>Action</td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>If specified, this action will be invoked in the first interval tick the power was active.</td>
+</tr>
+<tr>
+<td><code>falling_action</code></td>
+<td>Action</td>
+<td style="text-align: center;"><em>optional</em></td>
+<td>If specified, this action will be invoked in the first interval tick the power was inactive.</td>
+</tr>
+<tr>
+<td><code>interval</code></td>
+<td>Int Provider</td>
+<td style="text-align: center;"><code>20</code></td>
+<td>Determines the period for which this power will tick. The provided integer is automatically clamped within the range of 0 and 2,147,483,647.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:callback/power/removed"</span><span class="p">,</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:callback/power/tick"</span><span class="p">,</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">"action"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:execute_command"</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nt">"source"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:entity"</span><span class="p">,</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"this"</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="p">},</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"scoreboard players remove @s somethingCoolAndFun 1"</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:set_entity_on_fire"</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nt">"ticks"</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"this"</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="p">},</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nt">"interval"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">}</span>
 </code></pre></div>
-<p>This example decrements the entity's score by 1 on the <code>somethingCoolAndFun</code> scoreboard objective upon "removing" the power from the entity.</p>
+<p>This example sets the entity on fire for 2 seconds every 5 seconds.</p>
 <h3 id="history">History</h3>
 <table>
     <tr>
