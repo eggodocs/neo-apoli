@@ -6,7 +6,7 @@ Invokes an action upon "removing" the power (1) from the entity.
 1. "Removing"/"removed" in this context means that the power is revoked for the Nth or last time.
 
 
-Type ID: `neo-apoli:callback/power/added`
+Type ID: `neo-apoli:callback/power/removed`
 
 
 ### Format
