@@ -3,6 +3,9 @@ site_url: https://eggodocs.github.io/neo-apoli
 
 theme:
   name: material
+  font:
+    text: Inter
+    code: JetBrains Mono
   palette:
     - media: "(prefers-color-scheme)"
       toggle:
