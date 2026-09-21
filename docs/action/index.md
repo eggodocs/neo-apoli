@@ -19,6 +19,11 @@ Field   | Type  | Default   | Description
 `type`  | Identifier    |   | The identifier of the desired action type.
 
 
+???+ question "Implicit `sequence`"
+
+    When defining an action, if you specify an array instead of an object, it will implicitly use the `sequence` action type.
+
+
 ### List of action types
 
 -   `add_velocity`
