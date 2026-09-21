@@ -8,31 +8,29 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/power/types/callback_power_revoked/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/providers/nbt/">
       
       
-        <link rel="prev" href="../callback_power_removed/">
+        <link rel="prev" href="../item/">
       
-      
-        <link rel="next" href="../callback_power_tick/">
       
       
         
       
       
-      <link rel="icon" href="../../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-ProperDocs 1.6.7, mkdocs-material-9.7.7">
     
     
       
-        <title>Callback Power Revoked - neo-apoli Documentation</title>
+        <title>NBT Provider - neo-apoli Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,9 +49,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#callback_power_revoked" class="md-skip">
+        <a href="#nbt_provider" class="md-skip">
           Skip to content
         </a>
       
@@ -93,12 +91,12 @@
             <div class="md-banner__inner md-grid md-typeset">
               
     You're not viewing the latest version.
-    <a href="../../../..">
+    <a href="../../..">
         <strong>Click here to go to latest.</strong>
     </a>
 
             </div>
-            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("../.."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
           </aside>
         
       </div>
@@ -110,7 +108,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../../.." title="neo-apoli Documentation" class="md-header__button md-logo" aria-label="neo-apoli Documentation" data-md-component="logo">
+    <a href="../.." title="neo-apoli Documentation" class="md-header__button md-logo" aria-label="neo-apoli Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -130,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Callback Power Revoked
+              NBT Provider
             
           </span>
         </div>
@@ -261,7 +259,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="neo-apoli Documentation" class="md-nav__button md-logo" aria-label="neo-apoli Documentation" data-md-component="logo">
+    <a href="../.." title="neo-apoli Documentation" class="md-nav__button md-logo" aria-label="neo-apoli Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -291,7 +289,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -338,7 +336,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../action/" class="md-nav__link ">
+            <a href="../../action/" class="md-nav__link ">
               
   
   
@@ -404,7 +402,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../condition/" class="md-nav__link ">
+            <a href="../../condition/" class="md-nav__link ">
               
   
   
@@ -447,8 +445,6 @@
       
   
   
-    
-  
   
   
     
@@ -464,15 +460,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../" class="md-nav__link ">
+            <a href="../../power/" class="md-nav__link ">
               
   
   
@@ -496,7 +494,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -513,10 +511,8 @@
                 
   
   
-    
   
   
-  
     
     
       
@@ -544,11 +540,13 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
         
           
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
@@ -569,7 +567,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -587,7 +585,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../callback_block_break/" class="md-nav__link">
+      <a href="../../power/types/callback_block_break/" class="md-nav__link">
         
   
   
@@ -615,7 +613,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../callback_block_place/" class="md-nav__link">
+      <a href="../../power/types/callback_block_place/" class="md-nav__link">
         
   
   
@@ -643,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../callback_damage_dealt/" class="md-nav__link">
+      <a href="../../power/types/callback_damage_dealt/" class="md-nav__link">
         
   
   
@@ -671,7 +669,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../callback_player_respawned/" class="md-nav__link">
+      <a href="../../power/types/callback_player_respawned/" class="md-nav__link">
         
   
   
@@ -699,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../callback_player_wake_up/" class="md-nav__link">
+      <a href="../../power/types/callback_player_wake_up/" class="md-nav__link">
         
   
   
@@ -727,7 +725,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../callback_power_added/" class="md-nav__link">
+      <a href="../../power/types/callback_power_added/" class="md-nav__link">
         
   
   
@@ -755,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../callback_power_granted/" class="md-nav__link">
+      <a href="../../power/types/callback_power_granted/" class="md-nav__link">
         
   
   
@@ -783,7 +781,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../callback_power_removed/" class="md-nav__link">
+      <a href="../../power/types/callback_power_removed/" class="md-nav__link">
         
   
   
@@ -808,37 +806,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Callback Power Revoked
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../power/types/callback_power_revoked/" class="md-nav__link">
         
   
   
@@ -854,59 +825,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Format
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#history" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        History
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -919,7 +837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../callback_power_tick/" class="md-nav__link">
+      <a href="../../power/types/callback_power_tick/" class="md-nav__link">
         
   
   
@@ -959,8 +877,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -990,13 +910,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -1017,7 +935,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1055,7 +973,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../providers/block/" class="md-nav__link ">
+            <a href="../block/" class="md-nav__link ">
               
   
   
@@ -1122,7 +1040,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../providers/boolean/" class="md-nav__link ">
+            <a href="../boolean/" class="md-nav__link ">
               
   
   
@@ -1189,7 +1107,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../providers/box/" class="md-nav__link ">
+            <a href="../box/" class="md-nav__link ">
               
   
   
@@ -1256,7 +1174,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../providers/command_source/" class="md-nav__link ">
+            <a href="../command_source/" class="md-nav__link ">
               
   
   
@@ -1323,7 +1241,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../providers/direction/" class="md-nav__link ">
+            <a href="../direction/" class="md-nav__link ">
               
   
   
@@ -1390,7 +1308,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../providers/effect/" class="md-nav__link ">
+            <a href="../effect/" class="md-nav__link ">
               
   
   
@@ -1457,7 +1375,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../providers/entity/" class="md-nav__link ">
+            <a href="../entity/" class="md-nav__link ">
               
   
   
@@ -1524,7 +1442,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../providers/float/" class="md-nav__link ">
+            <a href="../float/" class="md-nav__link ">
               
   
   
@@ -1591,7 +1509,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../providers/int/" class="md-nav__link ">
+            <a href="../int/" class="md-nav__link ">
               
   
   
@@ -1658,7 +1576,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../providers/item/" class="md-nav__link ">
+            <a href="../item/" class="md-nav__link ">
               
   
   
@@ -1702,6 +1620,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1715,17 +1635,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_11" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../providers/nbt/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -1744,7 +1662,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_11">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1810,21 +1728,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#list_of_nbt_provider_types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#history" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        History
+        List of NBT provider types
       
     </span>
   </a>
@@ -1851,55 +1758,42 @@
   
 
 
-<h1 id="callback_power_revoked">Callback Power Revoked</h1>
-<p>Invokes an action upon revoking the power for the last time from the entity.</p>
-<p>Type ID: <code>neo-apoli:callback/power/revoked</code></p>
+<h1 id="nbt_provider">NBT Provider</h1>
+<p>NBT providers are data objects that operate on the given context, and return an NBT based on the provided information.</p>
 <h3 id="format">Format</h3>
 <table>
 <thead>
 <tr>
 <th>Field</th>
 <th>Type</th>
-<th style="text-align: center;">Default</th>
+<th>Default</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>action</code></td>
-<td>Action</td>
-<td style="text-align: center;"></td>
-<td>The action to invoke after the power is revoked from the entity.</td>
+<td><code>type</code></td>
+<td>Identifier</td>
+<td></td>
+<td>The identifier of the desired NBT provider type.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="example">Example</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:callback/power/granted"</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">"action"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:execute_command"</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nt">"source"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:entity"</span><span class="p">,</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"this"</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="p">},</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tag @s remove init"</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
-</code></pre></div>
-<p>This example removes the <code>init</code> tag from the entity upon the power being revoked.</p>
-<h3 id="history">History</h3>
-<table>
-    <tr>
-        <td style="text-align: center; vertical-align: middle"><b>Minecraft</b></td>
-        <td style="text-align: center; vertical-align: middle"><b>Mod</b></td>
-        <td style="vertical-align: middle"><b>Changelog</b></td>
-    </tr>
-    <tr style="text-align: center; vertical-align: middle">
-        <td style="text-align: center; vertical-align: middle">1.21.5</td>
-        <td style="text-align: center; vertical-align: middle">0.1.0</td>
-        <td style="vertical-align: middle">Added the power type.</td>
-    </tr>
-</table>
+<details class="question" open="open">
+<summary>Implicit <code>constant</code></summary>
+<p>When defining an NBT provider, if you specify a string or NBT, it will implicitly use the <code>constant</code> NBT provider type.</p>
+</details>
+<h3 id="list_of_nbt_provider_types">List of NBT provider types</h3>
+<ul>
+<li><code>conditional/composite</code></li>
+<li><code>conditional</code></li>
+<li><code>constant</code></li>
+<li><code>block</code></li>
+<li><code>entity</code></li>
+<li><code>item</code></li>
+<li><code>power</code></li>
+<li><code>storage</code></li>
+</ul>
 
 
 
@@ -1957,10 +1851,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.instant", "navigation.indexes", "navigation.top", "search.share"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.annotate", "content.tabs.link", "navigation.expand", "navigation.instant", "navigation.indexes", "navigation.top", "search.share"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
