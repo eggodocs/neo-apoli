@@ -1,5 +1,8 @@
 site_name: neo-apoli Documentation
-site_url: https://eggodocs.github.io/neo-apoli
+site_url: https://eggodocs.github.io/neo-apoli/
+
+repo_url: https://github.com/eggohito/neo-apoli
+repo_name: eggohito/neo-apoli
 
 theme:
   name: material
@@ -32,7 +35,7 @@ theme:
 
 plugins:
   - search
-  - mike
+  - meta
 
 markdown_extensions:
   - toc:
@@ -45,7 +48,7 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - admonition
-  - meta
+  - tables
 
 extra:
   version:
