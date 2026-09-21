@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: 3.x
       - name: Install requirements
-        run: pip install properdocs properdocs-theme-mkdocs mkdocs-material mike
+        run: pip install -r requirements.txt
       - name: Setup Git user
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -31,4 +31,4 @@ jobs:
       - name: Deploy version with mike
         run: |
           git pull
-          mike deploy --push $BRANCH_NAME
+          mike deploy $BRANCH_NAME --push

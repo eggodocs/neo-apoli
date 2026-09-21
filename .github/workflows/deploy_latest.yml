@@ -15,12 +15,12 @@ jobs:
         with:
           python-version: 3.x
       - name: Install requirements
-        run: pip install properdocs properdocs-theme-mkdocs mkdocs-material mike
+        run: pip install -r requirements.txt
       - name: Setup Git user
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
       - name: Deploy version with mike
         run: |
-          git fetch origin gh-pages --depth=1
+          git pull
           mike deploy $BRANCH_NAME latest --push --update-aliases
