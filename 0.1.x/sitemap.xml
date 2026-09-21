@@ -5,55 +5,55 @@
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/action_types/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/action/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/condition_types/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/condition/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_block_break/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/types/callback_block_break/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_block_place/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/types/callback_block_place/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_damage_dealt/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/types/callback_damage_dealt/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_player_respawned/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/types/callback_player_respawned/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_player_wake_up/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/types/callback_player_wake_up/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_power_added/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/types/callback_power_added/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_power_granted/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/types/callback_power_granted/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_power_removed/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/types/callback_power_removed/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_power_revoked/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/types/callback_power_revoked/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
     <url>
-         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_power_tick/</loc>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/types/callback_power_tick/</loc>
          <lastmod>2026-09-21</lastmod>
     </url>
 </urlset>
