@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_block_break/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_damage_dealt/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../callback_block_place/">
       
-      
-        <link rel="next" href="../callback_block_place/">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>Callback Block Break - neo-apoli Documentation</title>
+        <title>Callback Damage Dealt - neo-apoli Documentation</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#callback_block_break" class="md-skip">
+        <a href="#callback_damage_dealt" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Callback Block Break
+              Callback Damage Dealt
             
           </span>
         </div>
@@ -576,6 +574,62 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../callback_block_break/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callback Block Break
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../callback_block_place/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callback Block Place
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -595,7 +649,7 @@
   <span class="md-ellipsis">
     
   
-    Callback Block Break
+    Callback Damage Dealt
   
 
     
@@ -613,7 +667,7 @@
   <span class="md-ellipsis">
     
   
-    Callback Block Break
+    Callback Damage Dealt
   
 
     
@@ -675,62 +729,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../callback_block_place/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Callback Block Place
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../callback_damage_dealt/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Callback Damage Dealt
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -830,9 +828,9 @@
   
 
 
-<h1 id="callback_block_break">Callback Block Break</h1>
-<p>Invokes an action upon the player breaking a block.</p>
-<p>Type ID: <code>neo-apoli:callback/block/break</code></p>
+<h1 id="callback_damage_dealt">Callback Damage Dealt</h1>
+<p>Invokes an action upon the player placing a block.</p>
+<p>Type ID: <code>neo-apoli:callback/block/place</code></p>
 <div class="admonition note">
 <p class="admonition-title">Context info</p>
 <p>This power type provides the following context parameters:</p>
@@ -845,12 +843,28 @@
 </thead>
 <tbody>
 <tr>
-<td><code>neo-apoli:broken_block</code></td>
-<td>The block broken by the player.</td>
+<td><code>neo-apoli:dealt_damage_source</code></td>
+<td>The damage source dealt by the entity holding the power.</td>
 </tr>
 <tr>
-<td><code>neo-apoli:broken_side</code></td>
-<td>The side at which the player broke the block.</td>
+<td><code>neo-apoli:dealt_damage_amount</code></td>
+<td>The damage amount dealt by the entity holding the power.</td>
+</tr>
+<tr>
+<td><code>neo-apoli:actor_entity</code></td>
+<td>The attacker entity (the entity holding the power.)</td>
+</tr>
+<tr>
+<td><code>neo-apoli:target_entity</code></td>
+<td>The entity that was attacked.</td>
+</tr>
+<tr>
+<td><code>neo-apoli:damaging_entity</code></td>
+<td>The projectile used for the attack (or the attacker if no projectiles are used.)</td>
+</tr>
+<tr>
+<td><code>neo-apoli:direct_damaging_entity</code></td>
+<td>The owner of the projectile used for the attack (or the attacker if no projectiles are used.)</td>
 </tr>
 </tbody>
 </table>
@@ -867,16 +881,10 @@
 </thead>
 <tbody>
 <tr>
-<td><code>on_break_action</code></td>
+<td><code>on_hit_action</code></td>
 <td>Action</td>
 <td style="text-align: center;"></td>
-<td>The action to invoke when a block is broken.</td>
-</tr>
-<tr>
-<td><code>only_when_harvested</code></td>
-<td>Boolean Provider</td>
-<td style="text-align: center;"><code>false</code></td>
-<td>Determines whether the action should only be invoked when the block is broken with its correct tool.</td>
+<td>The action to invoke when damage is dealt to an entity.</td>
 </tr>
 <tr>
 <td><code>priority</code></td>
@@ -892,20 +900,28 @@
 </details>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:callback/block/break"</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">"on_break_action"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:set_entity_on_fire"</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nt">"ticks"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"this"</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nt">"active_condition"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:is_block_of_type"</span><span class="p">,</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="nt">"block_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"minecraft:magma_block"</span><span class="p">,</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="nt">"block"</span><span class="p">:</span><span class="w"> </span><span class="s2">"broken_block"</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:callback/damage/dealt"</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">"on_hit_action"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:execute_command"</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nt">"source"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:entity"</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"this"</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:join"</span><span class="p">,</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">            </span><span class="nt">"strings"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">                </span><span class="s2">"tp @s"</span><span class="p">,</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">                </span><span class="p">{</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">                    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:entity/uuid"</span><span class="p">,</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">                    </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"target"</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">                </span><span class="p">}</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">            </span><span class="p">],</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">            </span><span class="nt">"separator"</span><span class="p">:</span><span class="w"> </span><span class="s2">" "</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="p">}</span>
 </code></pre></div>
-<p>This example sets the entity on fire if the block they broke was a Magma block.</p>
+<p>This example teleports the entity that was attacked to the entity holding the power.</p>
 <h3 id="history">History</h3>
 <table>
     <tr>
