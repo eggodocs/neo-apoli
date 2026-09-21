@@ -1,6 +1,6 @@
 #   Direction Provider
 
-Direction providers are data objects that operate on the given context, and return a diretion based on the provided information.
+Direction providers are data objects that operate on the given context, and return a direction based on the provided information.
 
 
 ### Format
