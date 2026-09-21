@@ -6,6 +6,7 @@ repo_name: eggohito/neo-apoli
 
 theme:
   name: material
+  custom_dir: overrides
   font:
     text: Inter
     code: JetBrains Mono
@@ -52,6 +53,9 @@ markdown_extensions:
   - tables
   - attr_list
   - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   version:
