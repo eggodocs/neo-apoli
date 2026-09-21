@@ -36,6 +36,7 @@ theme:
 plugins:
   - search
   - meta
+  - table-reader
 
 markdown_extensions:
   - toc:

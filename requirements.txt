@@ -2,3 +2,4 @@ properdocs
 properdocs-theme-mkdocs
 mkdocs-material
 mike
+mkdocs-table-reader-plugin
