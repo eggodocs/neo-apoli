@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_block_place/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/types/power_types/callback_power_granted/">
       
       
-        <link rel="prev" href="../callback_block_break/">
+        <link rel="prev" href="../callback_power_added/">
       
-      
-        <link rel="next" href="../callback_damage_dealt/">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>Callback Block Place - neo-apoli Documentation</title>
+        <title>Callback Power Granted - neo-apoli Documentation</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#callback_block_place" class="md-skip">
+        <a href="#callback_power_granted" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Callback Block Place
+              Callback Power Granted
             
           </span>
         </div>
@@ -612,37 +610,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Callback Block Place
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../callback_block_place/" class="md-nav__link">
         
   
   
@@ -658,59 +629,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Format
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#history" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        History
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -832,10 +750,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../callback_power_granted/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Callback Power Granted
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -851,6 +796,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        History
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -950,35 +948,9 @@
   
 
 
-<h1 id="callback_block_place">Callback Block Place</h1>
-<p>Invokes an action upon the player placing a block.</p>
-<p>Type ID: <code>neo-apoli:callback/block/place</code></p>
-<div class="admonition note">
-<p class="admonition-title">Context info</p>
-<p>This power type provides the following context parameters:</p>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>neo-apoli:placed_on_block</code></td>
-<td>The block the player placed a block on.</td>
-</tr>
-<tr>
-<td><code>neo-apoli:placed_to_block</code></td>
-<td>The block the player placed.</td>
-</tr>
-<tr>
-<td><code>neo-apoli:placed_side</code></td>
-<td>The side of the block the player placed on.</td>
-</tr>
-</tbody>
-</table>
-</div>
+<h1 id="callback_power_granted">Callback Power Granted</h1>
+<p>Invokes an action upon granting the power to the entity.</p>
+<p>Type ID: <code>neo-apoli:callback/power/granted</code></p>
 <h3 id="format">Format</h3>
 <table>
 <thead>
@@ -991,65 +963,27 @@
 </thead>
 <tbody>
 <tr>
-<td><code>on_place_action</code></td>
+<td><code>action</code></td>
 <td>Action</td>
 <td style="text-align: center;"></td>
-<td>The action to invoke when a block is placed.</td>
-</tr>
-<tr>
-<td><code>directions</code></td>
-<td>Array of Directions</td>
-<td style="text-align: center;"><code>["down", "up", "north", "south", "west", "east"]</code></td>
-<td>Determines if the action is invoked when the block is placed at the specified sides.</td>
-</tr>
-<tr>
-<td><code>hands</code></td>
-<td>Array of Hands</td>
-<td style="text-align: center;"><code>["mainhand", "offhand"]</code></td>
-<td>Determines if the action should be invoked when the block is held and placed with the specified hands.</td>
-</tr>
-<tr>
-<td><code>priority</code></td>
-<td>Integer</td>
-<td style="text-align: center;"><code>0</code></td>
-<td>Determines the order of which powers of this type will be iterated.</td>
+<td>The action to invoke after the power is granted to the entity.</td>
 </tr>
 </tbody>
 </table>
-<details class="question">
-<summary>About priorities</summary>
-<p>The instances of this type will be sorted in its <em>natural order</em> meaning that instances that have a lower priority value will be executed first before those that have higher priority values.</p>
-</details>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:callback/block/place"</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">"on_place_action"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="p">{</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:bone_meal"</span><span class="p">,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nt">"position"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">                </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:block/position"</span><span class="p">,</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">                </span><span class="nt">"block"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:placed_to_block"</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">            </span><span class="p">}</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">        </span><span class="p">},</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="p">{</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:apply_effects"</span><span class="p">,</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">            </span><span class="nt">"effects"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">                </span><span class="p">{</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">                    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"minecraft:regeneration"</span><span class="p">,</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">                    </span><span class="nt">"amplifier"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">                    </span><span class="nt">"duration"</span><span class="p">:</span><span class="w"> </span><span class="mi">80</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">                </span><span class="p">}</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">            </span><span class="p">]</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">        </span><span class="p">}</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">    </span><span class="p">],</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="nt">"active_condition"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:is_block_in_tag"</span><span class="p">,</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="w">        </span><span class="nt">"block_tag"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#minecraft:flowers"</span><span class="p">,</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">        </span><span class="nt">"block"</span><span class="p">:</span><span class="w"> </span><span class="s2">"placed_to_block"</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="p">}</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:callback/power/granted"</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">"action"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:execute_command"</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nt">"source"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:entity"</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"this"</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tag @s add init"</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
 </code></pre></div>
-<p>This example applies a bone meal effect to where the block was placed and gives the player the Regeneration II (00:04) effect upon placing any kind of flowers (or any block included in the <code>#minecraft:flowers</code> block tag.)</p>
+<p>This example adds an <code>init</code> tag to the entity after the power is granted. The tag will only be added once, unless the power is revoked and granted again.</p>
 <h3 id="history">History</h3>
 <table>
     <tr>
