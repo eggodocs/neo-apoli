@@ -9,7 +9,7 @@ Block providers are data objects that operate on the given context, and return a
 
 Field   | Type  | Default   | Description
 --------|-------|-----------|------------
-`type`  | Identifier    |   | The identifier of the desired boolean provider.
+`type`  | Identifier    |   | The identifier of the desired block provider.
 
 
 ### List of boolean provider types
