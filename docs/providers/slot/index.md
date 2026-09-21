@@ -11,14 +11,14 @@ Slot providers are data objects that operate on the given context, and return a 
 
 | Field  | Type       | Default | Description                                       |
 | ------ | ---------- | ------- | ------------------------------------------------- |
-| `type` | Identifier |         | The identifier of the desired item provider type. |
+| `type` | Identifier |         | The identifier of the desired slot provider type. |
 
 ???+ question "Implicit `context`"
     
     When defining a slot provider, if you specify a string, it will implicitly use the `context` slot provider type.
 
 
-### List of item provider types
+### List of slot provider types
 
 -   `conditional/composite`
 -   `conditional`

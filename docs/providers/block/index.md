@@ -12,7 +12,7 @@ Field   | Type  | Default   | Description
 `type`  | Identifier    |   | The identifier of the desired block provider.
 
 
-### List of boolean provider types
+### List of block provider types
 
 - `conditional/composite`
 - `conditional`
