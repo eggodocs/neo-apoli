@@ -1,10 +1,26 @@
-#   Condition Types
-Condition types define how a condition should test a context. Depending on the condition, it can also pass the inherited context to its types that also use a context.
+#   Condition
+
+Conditions are used to test against a given context, checking the provided information and return either a pass or fail. 
+
+Custom conditions can be defined as JSON/JSON5/JSONC files in the `data/<namespace>/neo-apoli/condition` directory of a data pack.
+
+Data packs that load later with a condition file with the same name and directory will replace the existing condition.
+
 
 !!! note
-    Some if not most condition types require certain context parameters to function. Make sure to check the page for the corresponding condition type that you want to use.
+
+    Some conditions require certain context parameters to function properly. Make sure to check the page for the desired condition type for more information.
+
+
+### Format
+
+Field   | Type  | Default   | Description
+--------|-------|-----------|------------
+`type`  | Identifier    |   | The identifier of the desired condition type.
+
 
 ### List of condition types
+
 - `all_of`
 - `any_of`
 - `block_state_property`

@@ -1,8 +1,23 @@
-# Action Types
+# Action
 
-Action types define how an action should operate on a context. Depending on the action, it can also pass the inherited context to its types that also use a context.
+Actions are used to operate on a given context. Actions can change or affect the world and/or its entities depending on the specified type.
 
-!!! note Some if not most action types require certain context parameters to function. Make sure to check the page for the corresponding action type that you want to use.
+Custom actions can be defined as JSON/JSON5/JSONC files in the `data/<namespace>/neo-apoli/action` directory of a data pack.
+
+Data packs that load later with an action file with the same name and directory will replace the existing action.
+
+
+!!! note
+
+    Some actions require certain context parameters to function properly. Make sure to check the page for the desired action type for more information.
+
+
+### Format
+
+Field   | Type  | Default   | Description
+--------|-------|-----------|------------
+`type`  | Identifier    |   | The identifier of the desired action type.
+
 
 ### List of action types
 
