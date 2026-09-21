@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/providers/int/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/providers/vec3/">
       
       
-        <link rel="prev" href="../float/">
+        <link rel="prev" href="../string/">
       
-      
-        <link rel="next" href="../item/">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>Int Provider - neo-apoli Documentation</title>
+        <title>Vec3 Provider - neo-apoli Documentation</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#int_provider" class="md-skip">
+        <a href="#vec3_provider" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Int Provider
+              Vec3 Provider
             
           </span>
         </div>
@@ -1494,8 +1492,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1509,15 +1505,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_9" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_9" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../int/" class="md-nav__link ">
               
   
   
@@ -1536,7 +1534,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1829,6 +1827,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1842,17 +1842,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_14" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_14" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../vec3/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -1871,7 +1869,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_14_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_14_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_14">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1937,10 +1935,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list_of_int_provider_types" class="md-nav__link">
+  <a href="#list_of_vec3_provider_types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List of int provider types
+        List of vec3 provider types
       
     </span>
   </a>
@@ -1967,8 +1965,11 @@
   
 
 
-<h1 id="int_provider">Int Provider</h1>
-<p>Int providers are data objects that operate on the given context, and return an integer based on the provided information.</p>
+<h1 id="vec3_provider">Vec3 Provider</h1>
+<p class="annotate">Vec3 providers are data objects that operate on the given context, and return a <code>Vec3</code>(1) based on the provided information.</p>
+<ol>
+<li>A vector that contains 3 doubles.</li>
+</ol>
 <h3 id="format">Format</h3>
 <table>
 <thead>
@@ -1984,63 +1985,26 @@
 <td><code>type</code></td>
 <td>Identifier</td>
 <td></td>
-<td>The identifier of the desired int provider type.</td>
+<td>The identifier of the desired vec3 provider type.</td>
 </tr>
 </tbody>
 </table>
 <details class="question" open="open">
 <summary>Implicit <code>constant</code></summary>
-<p>When defining an int provider, if you specify an integer value, it will implicitly use the <code>constant</code> int provider type.</p>
+<p>When defining a vec3 provider, if you specify an array, it will implicitly use the <code>constant</code> vec3 provider type.</p>
 </details>
-<h3 id="list_of_int_provider_types">List of int provider types</h3>
-<div class="annotate">
+<h3 id="list_of_vec3_provider_types">List of vec3 provider types</h3>
 <ul>
-<li><code>absolute</code>(1)</li>
-<li><code>clamped</code></li>
 <li><code>conditional/composite</code></li>
 <li><code>conditional</code></li>
 <li><code>constant</code></li>
-<li><code>context</code></li>
-<li><code>difference</code> (2)</li>
-<li><code>from_float</code></li>
-<li><code>max</code></li>
-<li><code>min</code></li>
-<li><code>nbt</code></li>
-<li><code>negate</code></li>
-<li><code>product</code> (3)</li>
-<li><code>quotient</code>(4)</li>
-<li><code>random/binomial</code></li>
-<li><code>random/uniform</code>(5)</li>
-<li><code>sum</code>(6)</li>
-<li><code>weighted</code></li>
-<li><code>adjacent_blocks</code></li>
-<li><code>blocks_colliding_box</code></li>
-<li><code>blocks_in_radius</code></li>
-<li><code>blocks_intersecting_box</code></li>
-<li><code>effect/amplifier</code></li>
-<li><code>entities_in_radius</code></li>
-<li><code>entity/active_effects</code></li>
-<li><code>equipped_enchantment_level</code></li>
-<li><code>item/count</code></li>
-<li><code>item/count/max</code></li>
-<li><code>item/fuel</code></li>
-<li><code>key/pressed_ticks</code></li>
-<li><code>key/pressed_time</code></li>
-<li><code>light_level</code></li>
-<li><code>player/food</code></li>
-<li><code>power/cooldown/remaining_ticks</code></li>
-<li><code>slot_id</code></li>
-<li><code>time</code></li>
+<li><code>direction</code></li>
+<li><code>dynamic</code></li>
+<li><code>entity/position</code></li>
+<li><code>entity/velocity</code></li>
+<li><code>entity/view</code></li>
+<li><code>offset</code></li>
 </ul>
-</div>
-<ol>
-<li>Aliases: <code>abs</code></li>
-<li>Aliases: <code>sub</code>, <code>diff</code>, <code>subtract</code></li>
-<li>Aliases: <code>mul</code>, <code>multiply</code></li>
-<li>Aliases: <code>div</code>, <code>divide</code></li>
-<li>Aliases: <code>rand</code>, <code>random</code></li>
-<li>Aliases: <code>add</code>, <code>addition</code></li>
-</ol>
 
 
 
