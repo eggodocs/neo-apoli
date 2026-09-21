@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/providers/block/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/providers/string/">
       
       
-        <link rel="prev" href="../../power/types/callback_power_tick/">
+        <link rel="prev" href="../slot/">
       
-      
-        <link rel="next" href="../boolean/">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>Block Provider - neo-apoli Documentation</title>
+        <title>String Provider - neo-apoli Documentation</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#block_provider" class="md-skip">
+        <a href="#string_provider" class="md-skip">
           Skip to content
         </a>
       
@@ -130,7 +128,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Block Provider
+              String Provider
             
           </span>
         </div>
@@ -956,8 +954,6 @@
                 
   
   
-    
-  
   
   
     
@@ -971,15 +967,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../block/" class="md-nav__link ">
               
   
   
@@ -998,7 +996,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1760,6 +1758,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1773,17 +1773,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_13" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_13" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../string/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -1802,7 +1800,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_13_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5_13">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1868,10 +1866,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list_of_boolean_provider_types" class="md-nav__link">
+  <a href="#list_of_string_provider_types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List of boolean provider types
+        List of string provider types
       
     </span>
   </a>
@@ -1898,9 +1896,8 @@
   
 
 
-<h1 id="block_provider">Block Provider</h1>
-<p>Block providers are data objects that operate on the given context, and return a <code>CachedBlock</code> based on the provided information.</p>
-<p><code>CachedBlock</code> is a record that contains the provided block's position, state, and entity.</p>
+<h1 id="string_provider">String Provider</h1>
+<p>String providers are data objects that operate on the given context, and return a string based on the provided information.</p>
 <h3 id="format">Format</h3>
 <table>
 <thead>
@@ -1916,16 +1913,24 @@
 <td><code>type</code></td>
 <td>Identifier</td>
 <td></td>
-<td>The identifier of the desired block provider.</td>
+<td>The identifier of the desired string provider type.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="list_of_boolean_provider_types">List of boolean provider types</h3>
+<details class="question" open="open">
+<summary>Implicit <code>constant</code></summary>
+<p>When defining a string provider, if you specify a string, it will implicitly use the <code>constant</code> string provider type.</p>
+</details>
+<h3 id="list_of_string_provider_types">List of string provider types</h3>
 <ul>
 <li><code>conditional/composite</code></li>
 <li><code>conditional</code></li>
-<li><code>context</code></li>
-<li><code>world</code></li>
+<li><code>constant</code></li>
+<li><code>join</code></li>
+<li><code>entity/uuid</code></li>
+<li><code>nbt</code></li>
+<li><code>from_int</code></li>
+<li><code>from_float</code></li>
 </ul>
 
 
