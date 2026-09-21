@@ -13,7 +13,7 @@ A power type defines how an instance of a power should function. It also contain
 ### List of power types
 - [`callback/block/break`](callback_block_break.md)
 - [`callback/block/place`](callback_block_place.md)
-- `callback/damage/dealt`
+- [`callback/damage/dealt`](callback_damage_dealt.md)
 - `callback/player/respawned`
 - `callback/player/wake_up`
 - `callback/power/added`
