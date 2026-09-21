@@ -14,5 +14,5 @@ Field   | Type  | Default   | Description
 
 - `conditional/composite`
 - `conditional`
-- `context`
-- `world`
+- `constant`
+- `condition_result`
