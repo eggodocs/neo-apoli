@@ -4,8 +4,14 @@ A power type defines how an instance of a power should function. It also contain
 !!! note
     Each power type, **unless stated otherwise**, supports an optional `active_condition` field which determines whether the power is considered active. If the field is absent, the power will be considered as always active.
 
+!!! note
+    Every power type provides and requires the `neo-apoli:this_entity` context parameter, which refers to the entity holding the power.
+
+    Some power types may provide certain context parameters that can be used in actions/conditions/value providers, so make sure to check their corresponding pages for more information.
+
+
 ### List of power types
-- `callback/block/break`
+- [`callback/block/break`](callback_block_break.md)
 - `callback/block/place`
 - `callback/damage/dealt`
 - `callback/player/respawned`
