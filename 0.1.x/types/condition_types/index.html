@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/types/action_types/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/types/condition_types/">
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../action_types/">
       
       
-        <link rel="next" href="../condition_types/">
+        <link rel="next" href="../power_types/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Action Types - neo-apoli Documentation</title>
+        <title>Condition Types - neo-apoli Documentation</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#action_types" class="md-skip">
+        <a href="#condition_types" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Action Types
+              Condition Types
             
           </span>
         </div>
@@ -334,6 +334,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../action_types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Action Types
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -353,7 +381,7 @@
   <span class="md-ellipsis">
     
   
-    Action Types
+    Condition Types
   
 
     
@@ -371,7 +399,7 @@
   <span class="md-ellipsis">
     
   
-    Action Types
+    Condition Types
   
 
     
@@ -397,10 +425,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#list_of_action_types" class="md-nav__link">
+  <a href="#list_of_condition_types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List of action types
+        List of condition types
       
     </span>
   </a>
@@ -411,34 +439,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../condition_types/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Condition Types
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -506,10 +506,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#list_of_action_types" class="md-nav__link">
+  <a href="#list_of_condition_types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List of action types
+        List of condition types
       
     </span>
   </a>
@@ -533,55 +533,52 @@
 
 
 
-<h1 id="action_types">Action Types</h1>
-<p>Action types define how an action should operate on a context. Depending on the action, it can also pass the inherited context to its types that also use a context.</p>
+<h1 id="condition_types">Condition Types</h1>
+<p>Condition types define how a condition should test a context. Depending on the condition, it can also pass the inherited context to its types that also use a context.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Some if not most action types require certain context parameters to function. Make sure to check the page for the corresponding action type that you want to use.</p>
+<p>Some if not most condition types require certain context parameters to function. Make sure to check the page for the corresponding condition type that you want to use.</p>
 </div>
-<h3 id="list_of_action_types">List of action types</h3>
+<h3 id="list_of_condition_types">List of condition types</h3>
 <ul>
-<li><code>add_velocity</code></li>
-<li><code>apply_effects</code></li>
-<li><code>area_of_effect</code></li>
-<li><code>bone_meal</code></li>
-<li><code>clear_powers</code></li>
-<li><code>conditional/composite</code></li>
-<li><code>conditional</code></li>
-<li><code>consume_item</code></li>
-<li><code>damage_entity</code></li>
-<li><code>damage_item</code></li>
-<li><code>dismount</code></li>
-<li><code>emit_game_event</code></li>
-<li><code>execute_command</code></li>
-<li><code>exhaust</code></li>
-<li><code>explode</code></li>
-<li><code>extinguish_entity_fire</code></li>
-<li><code>gain_air</code></li>
-<li><code>give_items</code></li>
-<li><code>grant_power</code></li>
-<li><code>loop</code></li>
-<li><code>modify_block_state_property</code></li>
-<li><code>modify_item</code></li>
-<li><code>mount</code></li>
-<li><code>nothing</code></li>
-<li><code>place_block</code></li>
-<li><code>play_sound</code></li>
-<li><code>random_chance</code></li>
+<li><code>all_of</code></li>
+<li><code>any_of</code></li>
+<li><code>block_state_property</code></li>
+<li><code>compare</code></li>
+<li><code>constant</code></li>
+<li><code>difficulty</code></li>
+<li><code>dynamic</code></li>
+<li><code>entity_has_active_power</code></li>
+<li><code>entity_has_correct_tool_for_block</code></li>
+<li><code>entity_has_item_equipped</code></li>
+<li><code>entity_has_power</code></li>
+<li><code>entity_has_pressed_keys_simultaneously</code></li>
+<li><code>exists</code></li>
+<li><code>inverted</code></li>
+<li><code>is_block_entity</code></li>
+<li><code>is_block_in_tag</code></li>
+<li><code>is_block_of_type</code></li>
+<li><code>is_block_replaceable</code></li>
+<li><code>is_damage_source_in_tag</code></li>
+<li><code>is_damage_source_of_type</code></li>
+<li><code>is_effect_in_tag</code></li>
+<li><code>is_effect_of_type</code></li>
+<li><code>is_entity_climbing</code></li>
+<li><code>is_entity_fall_flying</code></li>
+<li><code>is_entity_horizontally_colliding</code></li>
+<li><code>is_entity_in_tag</code></li>
+<li><code>is_entity_of_type</code></li>
+<li><code>is_entity_on_fire</code></li>
+<li><code>is_entity_owned_by_other</code></li>
+<li><code>is_entity_sneaking</code></li>
+<li><code>is_entity_sprinting</code></li>
+<li><code>is_entity_stepping_on_block</code></li>
+<li><code>is_exposed_to_precipitation</code></li>
+<li><code>is_exposed_to_sky</code></li>
+<li><code>item_matches_ingredient</code></li>
+<li><code>item_matches_predicate</code></li>
+<li><code>matches_block_pattern</code></li>
 <li><code>reference</code></li>
-<li><code>remove_power</code></li>
-<li><code>revoke_all_powers</code></li>
-<li><code>revoke_power</code></li>
-<li><code>sequence</code></li>
-<li><code>set_entity_on_fire</code></li>
-<li><code>shoot_entity</code></li>
-<li><code>side</code></li>
-<li><code>spawn_particles</code></li>
-<li><code>swing_hand</code></li>
-<li><code>tame</code></li>
-<li><code>toggle_power</code></li>
-<li><code>trigger_power_cooldown</code></li>
-<li><code>weighted</code></li>
 </ul>
 
 
