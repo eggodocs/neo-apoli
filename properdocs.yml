@@ -1,0 +1,50 @@
+site_name: neo-apoli Documentation
+site_url: https://eggodocs.github.io/neo-apoli
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      schema: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      schema: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.expand
+    - navigation.instant
+    - navigation.indexes
+    - navigation.top
+    - search.share
+
+plugins:
+  - search
+  - mike
+
+markdown_extensions:
+  - toc:
+      separator: "_"
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - meta
+
+extra:
+  version:
+    provider: mike
+
