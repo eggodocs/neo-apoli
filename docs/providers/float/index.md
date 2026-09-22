@@ -10,9 +10,14 @@ Field | Type | Default | Description
 `type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired float provider type.
 
 
-???+ question "Implicit `constant`"
+???+ question "Implicit types"
 
-    When defining a float provider, if you specify a float value, it will implicitly use the `constant` float provider type.
+    When defining an float provider, specifying certain data types will implicitly use a specific type:
+
+    Data Type | Float Provider Type
+    ----------|------------------
+    String | `context`
+    Float | `constant`
 
 
 ### List of float provider types

@@ -10,9 +10,14 @@ Field | Type | Default | Description
 `type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired int provider type.
 
 
-???+ question "Implicit `constant`"
+???+ question "Implicit types"
 
-    When defining an int provider, if you specify an integer value, it will implicitly use the `constant` int provider type.
+    When defining an int provider, specifying certain data types will implicitly use a specific type:
+
+    Data Type | Int Provider Type
+    ----------|------------------
+    String | `context`
+    Integer | `constant`
 
 
 ### List of int provider types
