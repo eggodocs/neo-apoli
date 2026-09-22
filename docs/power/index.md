@@ -32,16 +32,16 @@ Field   | Type  | Default   | Description
 
 ### List of power types
 
-- [`callback/block/break`](callback_block_break.md)
-- [`callback/block/place`](callback_block_place.md)
-- [`callback/damage/dealt`](callback_damage_dealt.md)
-- [`callback/player/respawned`](callback_player_respawned.md)
-- [`callback/player/wake_up`](callback_player_wake_up.md)
-- [`callback/power/added`](callback_power_added.md)
-- [`callback/power/granted`](callback_power_granted.md)
-- [`callback/power/removed`](callback_power_removed.md)
-- [`callback/power/revoked`](callback_power_revoked.md)
-- [`callback/power/tick`](callback_power_tick.md)
+- [`callback/block/break`](types/callback_block_break.md)
+- [`callback/block/place`](types/callback_block_place.md)
+- [`callback/damage/dealt`](types/callback_damage_dealt.md)
+- [`callback/player/respawned`](types/callback_player_respawned.md)
+- [`callback/player/wake_up`](types/callback_player_wake_up.md)
+- [`callback/power/added`](types/callback_power_added.md)
+- [`callback/power/granted`](types/callback_power_granted.md)
+- [`callback/power/removed`](types/callback_power_removed.md)
+- [`callback/power/revoked`](types/callback_power_revoked.md)
+- [`callback/power/tick`](types/callback_power_tick.md)
 - `callback/projectile/land`
 - `cooldown`
 - `crafting_recipe`
