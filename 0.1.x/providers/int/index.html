@@ -2409,8 +2409,26 @@
 </tbody>
 </table>
 <details class="question" open="open">
-<summary>Implicit <code>constant</code></summary>
-<p>When defining an int provider, if you specify an integer value, it will implicitly use the <code>constant</code> int provider type.</p>
+<summary>Implicit types</summary>
+<p>When defining an int provider, specifying certain data types will implicitly use a specific type:</p>
+<table>
+<thead>
+<tr>
+<th>Data Type</th>
+<th>Int Provider Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>String</td>
+<td><code>context</code></td>
+</tr>
+<tr>
+<td>Integer</td>
+<td><code>constant</code></td>
+</tr>
+</tbody>
+</table>
 </details>
 <h3 id="list_of_int_provider_types">List of int provider types</h3>
 <div class="annotate">
