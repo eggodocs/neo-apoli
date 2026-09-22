@@ -44,7 +44,7 @@ Field | Type | Default | Description
 - [`callback/power/tick`](types/callback_power_tick.md)
 - [`callback/projectile/land`](types/callback_projectile_land.md)
 - [`cooldown`](types/cooldown.md)
-- `crafting_recipe`
+- [`crafting_recipe`](types/crafting_recipe.md)
 - `dummy`
 - `hud_render`
 - `inventory`
