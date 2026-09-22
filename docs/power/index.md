@@ -43,7 +43,7 @@ Field | Type | Default | Description
 - [`callback/power/revoked`](types/callback_power_revoked.md)
 - [`callback/power/tick`](types/callback_power_tick.md)
 - [`callback/projectile/land`](types/callback_projectile_land.md)
-- `cooldown`
+- [`cooldown`](types/cooldown.md)
 - `crafting_recipe`
 - `dummy`
 - `hud_render`
