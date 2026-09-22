@@ -9,9 +9,9 @@ Block providers are data objects that operate on the given context, and return a
 
 ### Format
 
-Field   | Type  | Default   | Description
---------|-------|-----------|------------
-`type`  | Identifier    |   | The identifier of the desired block provider.
+Field | Type | Default | Description
+------|------|:-------:|------------
+`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired block provider.
 
 
 ### List of block provider types

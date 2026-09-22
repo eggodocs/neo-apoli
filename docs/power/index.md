@@ -18,12 +18,12 @@ Data packs that load later with a power file with the same name and directory wi
 
 ### Format
 
-Field   | Type  | Default   | Description
---------|-------|-----------|------------
-`type`          | Identifier        |               | The identifier of the desired power type.
-`name`          | Text Component    | *optional*    | The display name of the power, prioritizing translations from resource packs. <br><br>If unspecified, a translatable name with the key `power.<namespace>.<path>.name` is provided.
-`description`   | Text Component    | *optional*    | The display description of the power, prioritizing translations from resource packs. <br><br>If unspecified, a translatable name with the key `power.<namespace>.<path>.description` is provided.
-`hidden`        | Boolean           | `false`       | Determines whether the power should be hidden.
+Field | Type | Default | Description
+------|------|:-------:|------------
+`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired power type.
+`name` | [Text Component](https://minecraft.wiki/w/Text_component_format) | *optional* | The display name of the power, prioritizing translations from resource packs. <br><br>If unspecified, a translatable name with the key `power.<namespace>.<path>.name` is provided.
+`description` | [Text Component](https://minecraft.wiki/w/Text_component_format) | *optional* | The display description of the power, prioritizing translations from resource packs. <br><br>If unspecified, a translatable name with the key `power.<namespace>.<path>.description` is provided.
+`hidden` | Boolean | `false` | Determines whether the power should be hidden.
     
 
 ???+ question "Powers and its `active_condition`"

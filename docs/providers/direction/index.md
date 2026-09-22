@@ -5,9 +5,9 @@ Direction providers are data objects that operate on the given context, and retu
 
 ### Format
 
-Field   | Type  | Default   | Description
---------|-------|-----------|------------
-`type`  | Identifier    |   | The identifier of the desired direction provider type.
+Field | Type | Default | Description
+------|------|:-------:|------------
+`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired direction provider type.
 
 
 ???+ question "Implicit `constant`"

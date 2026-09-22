@@ -5,10 +5,10 @@ HUD elements are objects that are displayed on the player's screen. This may var
 
 ### Format
 
-Field   | Type  | Default   | Description
---------|-------|-----------|------------
-`type`  | Identifier    |   | The identifier of the desired HUD element type.
-`order` | Integer       |   | Determines the order at which the element is rendered.
+Field | Type | Default | Description
+------|------|:-------:|------------
+`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired HUD element type.
+`order` | Integer | | Determines the order at which the element is rendered.
 
 
 ??? question "About orders"

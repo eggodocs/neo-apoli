@@ -11,9 +11,9 @@ Type ID: `neo-apoli:callback/power/added`
 
 ### Format
 
-Field   | Type  | Default   | Description 
---------|-------|:---------:|-------------
-`action` | Action    |       | The action to invoke after the power is "added" to the entity.
+Field | Type | Default | Description 
+------|------|:-------:|-------------
+`action` | [Action](../../action/index.md) | | The action to invoke after the power is "added" to the entity.
 
 
 ### Example

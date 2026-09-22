@@ -5,9 +5,9 @@ Boolean providers are data objects that operate on the given context, and return
 
 ### Format
 
-Field   | Type  | Default   | Description
---------|-------|-----------|------------
-`type`  | Identifier    |   | The identifier of the desired boolean provider.
+Field | Type | Default | Description
+------|------|:-------:|------------
+`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired boolean provider.
 
 
 ### List of boolean provider types

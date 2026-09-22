@@ -9,22 +9,22 @@ Type ID: `neo-apoli:callback/block/place`
     
     This power type provides the following context parameters:
 
-    Parameter   | Description
-    ------------|-----
-    `neo-apoli:dealt_damage_source`     | The damage source dealt by the entity holding the power.
-    `neo-apoli:dealt_damage_amount`     | The damage amount dealt by the entity holding the power.
-    `neo-apoli:actor_entity`            | The attacker entity (the entity holding the power.)
-    `neo-apoli:target_entity`           | The entity that was attacked.
-    `neo-apoli:damaging_entity`         | The projectile used for the attack (or the attacker if no projectiles are used.)
-    `neo-apoli:direct_damaging_entity`  | The owner of the projectile used for the attack (or the attacker if no projectiles are used.)
+    Parameter | Description
+    ----------|------------
+    `neo-apoli:dealt_damage_source` | The damage source dealt by the entity holding the power.
+    `neo-apoli:dealt_damage_amount` | The damage amount dealt by the entity holding the power.
+    `neo-apoli:actor_entity` | The attacker entity (the entity holding the power.)
+    `neo-apoli:target_entity` | The entity that was attacked.
+    `neo-apoli:damaging_entity` | The projectile used for the attack (or the attacker if no projectiles are used.)
+    `neo-apoli:direct_damaging_entity` | The owner of the projectile used for the attack (or the attacker if no projectiles are used.)
 
 
 ### Format
 
-Field   | Type  | Default   | Description 
---------|-------|:---------:|-------------
-`on_hit_action` | Action    |       | The action to invoke when damage is dealt to an entity.
-`priority`      | Integer   | `0`   | Determines the order of which powers of this type will be iterated.
+Field | Type | Default | Description 
+------|------|:-------:|------------
+`on_hit_action` | [Action](../../action/index.md) | | The action to invoke when damage is dealt to an entity.
+`priority` | Integer | `0` | Determines the order of which powers of this type will be iterated.
 
 
 ??? question "About priorities"

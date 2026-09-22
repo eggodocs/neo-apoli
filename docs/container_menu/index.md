@@ -10,9 +10,9 @@ Container menus are types that indicate how a GUI (graphical user interface) sho
 
 ### Format
 
-Field   | Type  | Default   | Description
---------|-------|-----------|------------
-`type`  | Identifier    |   | The identifier of the desired container menu type.
+Field | Type | Default | Description
+------|------|:-------:|------------
+`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired container menu type.
 
 
 ## List of container menu types

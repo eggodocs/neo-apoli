@@ -5,9 +5,9 @@ Colors are objects used to provide an integer from a context object. The provide
 
 ### Format
 
-Field   | Type  | Default   | Description
---------|-------|-----------|------------
-`type`  | Identifier    |   | The identifier of the desired color type.
+Field | Type | Default | Description
+------|------|:-------:|------------
+`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired color type.
 
 
 !!! question "Implicit `rgba`"

@@ -14,9 +14,9 @@ Data packs that load later with an action file with the same name and directory 
 
 ### Format
 
-Field   | Type  | Default   | Description
---------|-------|-----------|------------
-`type`  | Identifier    |   | The identifier of the desired action type.
+Field | Type | Default | Description
+------|------|:-------:|------------
+`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired action type.
 
 
 ???+ question "Implicit `sequence`"

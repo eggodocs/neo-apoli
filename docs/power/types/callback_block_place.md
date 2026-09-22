@@ -9,21 +9,21 @@ Type ID: `neo-apoli:callback/block/place`
     
     This power type provides the following context parameters:
 
-    Parameter   | Description
-    ------------|-----
+    Parameter | Description
+    ----------|------------
     `neo-apoli:placed_on_block` | The block the player placed a block on.
     `neo-apoli:placed_to_block` | The block the player placed.
-    `neo-apoli:placed_side`     | The side of the block the player placed on.
+    `neo-apoli:placed_side` | The side of the block the player placed on.
 
 
 ### Format
 
-Field   | Type  | Default   | Description 
---------|-------|:---------:|-------------
-`on_place_action`   | Action                |                                                       | The action to invoke when a block is placed.
-`directions`        | Array of Directions   | `["down", "up", "north", "south", "west", "east"]`    | Determines if the action is invoked when the block is placed at the specified sides.
-`hands`             | Array of Hands        | `["mainhand", "offhand"]`                             | Determines if the action should be invoked when the block is held and placed with the specified hands.
-`priority`          | Integer               | `0`                                                   | Determines the order of which powers of this type will be iterated.
+Field | Type | Default | Description 
+------|------|:-------:|-------------
+`on_place_action` | [Action](../../action/index.md) | | The action to invoke when a block is placed.
+`directions` | Array of Directions | `["down", "up", "north", "south", "west", "east"]` | Determines if the action is invoked when the block is placed at the specified sides.
+`hands` | Array of Hands | `["mainhand", "offhand"]` | Determines if the action should be invoked when the block is held and placed with the specified hands.
+`priority` | Integer | `0` | Determines the order of which powers of this type will be iterated.
 
 
 ??? question "About priorities"

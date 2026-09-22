@@ -7,9 +7,9 @@ Type ID: `neo-apoli:callback/player/wake_up`
 
 ### Format
 
-Field   | Type  | Default   | Description 
---------|-------|:---------:|-------------
-`action` | Action    |       | The action to invoke after the player wakes up.
+Field | Type | Default | Description 
+------|------|:-------:|-------------
+`action` | [Action](../../action/index.md) | | The action to invoke after the player wakes up.
 
 
 ### Example

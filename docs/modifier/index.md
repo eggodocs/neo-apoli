@@ -5,12 +5,12 @@ Modifiers are objects used to specify how a floating point value is modified.
 
 ### Format
 
-Field   | Type  | Default   | Description
---------|-------|-----------|------------
-`type`      | Identifier            |               | The identifier of the desired modifier type.
-`phase`     | Phase                 |               | Determines when the modifier will be applied.
-`modifiers` | Array of Modifiers    | *optional*    | If specified, these modifiers will be applied first before the this modifier is applied.
-`amount`    | Float Provider        |               | The amount of the modifier.
+Field | Type | Default | Description
+------|------|:-------:|------------
+`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired modifier type.
+`phase` | Phase | | Determines when the modifier will be applied.
+`modifiers` | Array of Modifiers | *optional* | If specified, these modifiers will be applied first before the this modifier is applied.
+`amount` | Float Provider | | The amount of the modifier.
 
 
 ??? note "About fields"

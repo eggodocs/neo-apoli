@@ -9,19 +9,19 @@ Type ID: `neo-apoli:callback/block/break`
     
     This power type provides the following context parameters:
 
-    Parameter   | Description
-    ------------|-----
-    `neo-apoli:broken_block`  | The block broken by the player.
-    `neo-apoli:broken_side`   | The side at which the player broke the block.
+    Parameter | Description
+    ----------|------------
+    `neo-apoli:broken_block` | The block broken by the player.
+    `neo-apoli:broken_side` | The side at which the player broke the block.
 
 
 ### Format
 
-Field   | Type  | Default   | Description 
---------|-------|:---------:|-------------
-`on_break_action`       | Action            |           | The action to invoke when a block is broken.
-`only_when_harvested`   | Boolean Provider  | `false`   | Determines whether the action should only be invoked when the block is broken with its correct tool.
-`priority`              | Integer           | `0`       | Determines the order of which powers of this type will be iterated.
+Field | Type | Default | Description
+------|------|:-------:|------------
+`on_break_action` | [Action](../../action/index.md) | | The action to invoke when a block is broken.
+`only_when_harvested` | [Boolean Provider](../../providers/boolean/index.md) | `false` | Determines whether the action should only be invoked when the block is broken with its correct tool.
+`priority` | Integer | `0` | Determines the order of which powers of this type will be iterated.
 
 
 ??? question "About priorities"

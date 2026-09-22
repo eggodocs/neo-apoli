@@ -14,9 +14,9 @@ Data packs that load later with a condition file with the same name and director
 
 ### Format
 
-Field   | Type  | Default   | Description
---------|-------|-----------|------------
-`type`  | Identifier    |   | The identifier of the desired condition type.
+Field | Type | Default | Description
+------|------|:-------:|------------
+`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired condition type.
 
 
 ### List of condition types

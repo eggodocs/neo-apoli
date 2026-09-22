@@ -5,9 +5,9 @@ Entity providers are data objects that operate on the given context, and return 
 
 ### Format
 
-Field   | Type  | Default   | Description
---------|-------|-----------|------------
-`type`  | Identifier    |   | The identifier of the desired entity provider type.
+Field | Type | Default | Description
+------|------|:-------:|------------
+`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired entity provider type.
 
 
 ???+ question "Implicit `context`"

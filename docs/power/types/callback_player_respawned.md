@@ -7,9 +7,9 @@ Type ID: `neo-apoli:callback/player/respawned`
 
 ### Format
 
-Field   | Type  | Default   | Description 
---------|-------|:---------:|-------------
-`action` | Action    |       | The action to invoke when the player respawns.
+Field | Type | Default | Description 
+------|------|:-------:|-------------
+`action` | [Action](../../action/index.md) | | The action to invoke when the player respawns.
 
 
 ### Example
