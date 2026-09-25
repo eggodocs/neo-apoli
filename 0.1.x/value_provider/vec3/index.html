@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_providers/nbt/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_provider/vec3/">
       
       
-        <link rel="prev" href="../item/">
+        <link rel="prev" href="../string/">
       
-      
-        <link rel="next" href="../slot/">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>NBT Provider - neo-apoli Documentation</title>
+        <title>Vec3 Provider - neo-apoli Documentation</title>
       
     
     
@@ -80,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nbt_provider" class="md-skip">
+        <a href="#vec3_provider" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              NBT Provider
+              Vec3 Provider
             
           </span>
         </div>
@@ -1861,7 +1859,7 @@
   <span class="md-ellipsis">
     
   
-    Value providers
+    Value provider
   
 
     
@@ -1877,7 +1875,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Value providers
+    Value provider
   
 
           </label>
@@ -2557,8 +2555,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2572,15 +2568,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_11" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_11" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../nbt/" class="md-nav__link ">
               
   
   
@@ -2599,7 +2597,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_11_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_11_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_11">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2758,6 +2756,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2771,17 +2771,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_14" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_14" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../vec3/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -2800,7 +2798,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_14_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_14_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11_14">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2866,10 +2864,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list_of_nbt_provider_types" class="md-nav__link">
+  <a href="#list_of_vec3_provider_types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List of NBT provider types
+        List of vec3 provider types
       
     </span>
   </a>
@@ -2896,8 +2894,11 @@
   
 
 
-<h1 id="nbt_provider">NBT Provider</h1>
-<p>NBT providers are data objects that operate on the given context, and return an NBT based on the provided information.</p>
+<h1 id="vec3_provider">Vec3 Provider</h1>
+<p class="annotate">Vec3 providers are data objects that operate on the given context, and return a <code>Vec3</code>(1) based on the provided information.</p>
+<ol>
+<li>A vector that contains 3 doubles.</li>
+</ol>
 <h3 id="format">Format</h3>
 <table>
 <thead>
@@ -2913,24 +2914,25 @@
 <td><code>type</code></td>
 <td><a href="https://minecraft.wiki/w/Identifier">Identifier</a></td>
 <td style="text-align: center;"></td>
-<td>The identifier of the desired NBT provider type.</td>
+<td>The identifier of the desired vec3 provider type.</td>
 </tr>
 </tbody>
 </table>
 <details class="question" open="open">
 <summary>Implicit <code>constant</code></summary>
-<p>When defining an NBT provider, if you specify a string or NBT, it will implicitly use the <code>constant</code> NBT provider type.</p>
+<p>When defining a vec3 provider, if you specify an array, it will implicitly use the <code>constant</code> vec3 provider type.</p>
 </details>
-<h3 id="list_of_nbt_provider_types">List of NBT provider types</h3>
+<h3 id="list_of_vec3_provider_types">List of vec3 provider types</h3>
 <ul>
 <li><code>conditional/composite</code></li>
 <li><code>conditional</code></li>
 <li><code>constant</code></li>
-<li><code>block</code></li>
-<li><code>entity</code></li>
-<li><code>item</code></li>
-<li><code>power</code></li>
-<li><code>storage</code></li>
+<li><code>direction</code></li>
+<li><code>dynamic</code></li>
+<li><code>entity/position</code></li>
+<li><code>entity/velocity</code></li>
+<li><code>entity/view</code></li>
+<li><code>offset</code></li>
 </ul>
 
 

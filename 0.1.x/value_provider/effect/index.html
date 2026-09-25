@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_providers/slot/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_provider/effect/">
       
       
-        <link rel="prev" href="../nbt/">
+        <link rel="prev" href="../direction/">
       
       
-        <link rel="next" href="../string/">
+        <link rel="next" href="../entity/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Slot Provider - neo-apoli Documentation</title>
+        <title>Effect Provider - neo-apoli Documentation</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot_provider" class="md-skip">
+        <a href="#effect_provider" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot Provider
+              Effect Provider
             
           </span>
         </div>
@@ -1861,7 +1861,7 @@
   <span class="md-ellipsis">
     
   
-    Value providers
+    Value provider
   
 
     
@@ -1877,7 +1877,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Value providers
+    Value provider
   
 
           </label>
@@ -2222,6 +2222,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2235,17 +2237,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_6" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../effect/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -2264,7 +2264,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2624,8 +2624,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2639,15 +2637,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_12" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_12" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../slot/" class="md-nav__link ">
               
   
   
@@ -2666,7 +2666,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_12_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_12">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2866,10 +2866,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list_of_slot_provider_types" class="md-nav__link">
+  <a href="#list_of_effect_provider_types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List of slot provider types
+        List of effect provider types
       
     </span>
   </a>
@@ -2896,11 +2896,8 @@
   
 
 
-<h1 id="slot_provider">Slot Provider</h1>
-<p class="annotate">Slot providers are data objects that operate on the given context, and return a <code>SlotAccess</code>(1) based on the provided information.</p>
-<ol>
-<li><code>SlotAccess</code> is a functional interface that essentially references an item from an entity or an inventory.</li>
-</ol>
+<h1 id="effect_provider">Effect Provider</h1>
+<p>Effect providers are data objects that operate on the given context, and return an effect instance based on the provided information.</p>
 <h3 id="format">Format</h3>
 <table>
 <thead>
@@ -2916,21 +2913,19 @@
 <td><code>type</code></td>
 <td><a href="https://minecraft.wiki/w/Identifier">Identifier</a></td>
 <td style="text-align: center;"></td>
-<td>The identifier of the desired slot provider type.</td>
+<td>The identifier of the desired effect provider type.</td>
 </tr>
 </tbody>
 </table>
 <details class="question" open="open">
 <summary>Implicit <code>context</code></summary>
-<p>When defining a slot provider, if you specify a string, it will implicitly use the <code>context</code> slot provider type.</p>
+<p>When defining a direction provider, if you specify a string, it will implicitly use the <code>context</code> direction provider type.</p>
 </details>
-<h3 id="list_of_slot_provider_types">List of slot provider types</h3>
+<h3 id="list_of_effect_provider_types">List of effect provider types</h3>
 <ul>
 <li><code>conditional/composite</code></li>
 <li><code>conditional</code></li>
 <li><code>context</code></li>
-<li><code>block</code></li>
-<li><code>entity</code></li>
 </ul>
 
 

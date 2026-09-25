@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_providers/float/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_provider/boolean/">
       
       
-        <link rel="prev" href="../entity/">
+        <link rel="prev" href="../block/">
       
       
-        <link rel="next" href="../int/">
+        <link rel="next" href="../box/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Float Provider - neo-apoli Documentation</title>
+        <title>Boolean Provider - neo-apoli Documentation</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#float_provider" class="md-skip">
+        <a href="#boolean_provider" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Float Provider
+              Boolean Provider
             
           </span>
         </div>
@@ -1861,7 +1861,7 @@
   <span class="md-ellipsis">
     
   
-    Value providers
+    Value provider
   
 
     
@@ -1877,7 +1877,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Value providers
+    Value provider
   
 
           </label>
@@ -1954,6 +1954,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1967,17 +1969,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_2" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../boolean/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -1996,7 +1996,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2356,8 +2356,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2371,15 +2369,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_8" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_8" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../float/" class="md-nav__link ">
               
   
   
@@ -2398,7 +2398,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_8_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2866,10 +2866,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list_of_float_provider_types" class="md-nav__link">
+  <a href="#list_of_boolean_provider_types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List of float provider types
+        List of boolean provider types
       
     </span>
   </a>
@@ -2896,8 +2896,8 @@
   
 
 
-<h1 id="float_provider">Float Provider</h1>
-<p>Float providers are data objects that operate on the given context, and return a float based on the provided information.</p>
+<h1 id="boolean_provider">Boolean Provider</h1>
+<p>Boolean providers are data objects that operate on the given context, and return a boolean value based on the provided information.</p>
 <h3 id="format">Format</h3>
 <table>
 <thead>
@@ -2913,77 +2913,17 @@
 <td><code>type</code></td>
 <td><a href="https://minecraft.wiki/w/Identifier">Identifier</a></td>
 <td style="text-align: center;"></td>
-<td>The identifier of the desired float provider type.</td>
+<td>The identifier of the desired boolean provider.</td>
 </tr>
 </tbody>
 </table>
-<details class="question" open="open">
-<summary>Implicit types</summary>
-<p>When defining an float provider, specifying certain data types will implicitly use a specific type:</p>
-<table>
-<thead>
-<tr>
-<th>Data Type</th>
-<th>Float Provider Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>String</td>
-<td><code>context</code></td>
-</tr>
-<tr>
-<td>Float</td>
-<td><code>constant</code></td>
-</tr>
-</tbody>
-</table>
-</details>
-<h3 id="list_of_float_provider_types">List of float provider types</h3>
-<div class="annotate">
+<h3 id="list_of_boolean_provider_types">List of boolean provider types</h3>
 <ul>
-<li><code>absolute</code>(1)</li>
-<li><code>clamped</code></li>
 <li><code>conditional/composite</code></li>
 <li><code>conditional</code></li>
 <li><code>constant</code></li>
-<li><code>context</code></li>
-<li><code>difference</code>(2)</li>
-<li><code>from_int</code></li>
-<li><code>linear_interpolated</code>(3)</li>
-<li><code>max</code></li>
-<li><code>min</code></li>
-<li><code>nbt</code></li>
-<li><code>negate</code></li>
-<li><code>power</code></li>
-<li><code>product</code>(4)</li>
-<li><code>quotient</code>(5)</li>
-<li><code>random/uniform</code>(6)</li>
-<li><code>round</code></li>
-<li><code>sum</code>(7)</li>
-<li><code>weighted</code></li>
-<li><code>box/component</code></li>
-<li><code>box/size</code></li>
-<li><code>brightness</code></li>
-<li><code>distance_between_positions</code></li>
-<li><code>entity/attribute</code></li>
-<li><code>entity/fluid_height</code></li>
-<li><code>item/attribute</code></li>
-<li><code>player/saturation</code></li>
-<li><code>power/cooldown/progress</code></li>
-<li><code>vector/component</code></li>
-<li><code>vector/length</code></li>
+<li><code>condition_result</code></li>
 </ul>
-</div>
-<ol>
-<li>Aliases: <code>abs</code></li>
-<li>Aliases: <code>sub</code>, <code>diff</code>, <code>subtract</code></li>
-<li>Aliases: <code>lerp</code></li>
-<li>Aliases: <code>mul</code>, <code>multiply</code></li>
-<li>Aliases: <code>div</code>, <code>divide</code></li>
-<li>Aliases: <code>random</code>, <code>rand</code></li>
-<li>Aliases: <code>add</code>, <code>addition</code></li>
-</ol>
 
 
 

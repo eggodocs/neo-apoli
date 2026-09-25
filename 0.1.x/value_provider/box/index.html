@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_providers/command_source/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_provider/box/">
       
       
-        <link rel="prev" href="../box/">
+        <link rel="prev" href="../boolean/">
       
       
-        <link rel="next" href="../direction/">
+        <link rel="next" href="../command_source/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Command Source Provider - neo-apoli Documentation</title>
+        <title>Box Provider - neo-apoli Documentation</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#command_source_provider" class="md-skip">
+        <a href="#box_provider" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Command Source Provider
+              Box Provider
             
           </span>
         </div>
@@ -1861,7 +1861,7 @@
   <span class="md-ellipsis">
     
   
-    Value providers
+    Value provider
   
 
     
@@ -1877,7 +1877,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Value providers
+    Value provider
   
 
           </label>
@@ -2021,6 +2021,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2034,17 +2036,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../box/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -2063,7 +2063,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2088,8 +2088,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2103,15 +2101,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_4" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../command_source/" class="md-nav__link ">
               
   
   
@@ -2130,7 +2130,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2866,10 +2866,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list_of_command_source_provider_types" class="md-nav__link">
+  <a href="#list_of_box_provider_types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List of command source provider types
+        List of box provider types
       
     </span>
   </a>
@@ -2896,15 +2896,8 @@
   
 
 
-<h1 id="command_source_provider">Command Source Provider</h1>
-<p class="annotate">Command source providers are data objects that operate on the given context, and return a <code>CommandSourceStack</code>(1) based on the provided information.</p>
-<ol>
-<li><code>CommandSourceStack</code> is vanilla's object used for executing commands.</li>
-</ol>
-<details class="warning" open="open">
-<summary>Warning</summary>
-<p>Command source providers are strictly <strong>server-sided</strong> only.</p>
-</details>
+<h1 id="box_provider">Box Provider</h1>
+<p>Box providers are data objects that operate on the given context, and return an <code>AABB</code> (axis-aligned bounding box) based on the provided information.</p>
 <h3 id="format">Format</h3>
 <table>
 <thead>
@@ -2920,23 +2913,21 @@
 <td><code>type</code></td>
 <td><a href="https://minecraft.wiki/w/Identifier">Identifier</a></td>
 <td style="text-align: center;"></td>
-<td>The identifier of the desired command source provider.</td>
+<td>The identifier of the desired box provider.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="list_of_command_source_provider_types">List of command source provider types</h3>
-<div class="annotate">
+<h3 id="list_of_box_provider_types">List of box provider types</h3>
 <ul>
 <li><code>conditional/composite</code></li>
 <li><code>conditional</code></li>
-<li><code>block</code></li>
-<li><code>entity</code></li>
-<li><code>server</code>(1)</li>
+<li><code>constant</code></li>
+<li><code>dynamic</code></li>
+<li><code>offset</code></li>
+<li><code>translate</code></li>
+<li><code>block/bounds</code></li>
+<li><code>entity/bounds</code></li>
 </ul>
-</div>
-<ol>
-<li>This type can be inlined. (e.g: <code>"source": "server"</code>)</li>
-</ol>
 
 
 

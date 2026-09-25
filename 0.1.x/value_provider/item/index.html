@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_providers/block/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_provider/item/">
       
       
-        <link rel="prev" href="../../power/modify_climbing/">
+        <link rel="prev" href="../int/">
       
       
-        <link rel="next" href="../boolean/">
+        <link rel="next" href="../nbt/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Block Provider - neo-apoli Documentation</title>
+        <title>Item Provider - neo-apoli Documentation</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#block_provider" class="md-skip">
+        <a href="#item_provider" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Block Provider
+              Item Provider
             
           </span>
         </div>
@@ -1861,7 +1861,7 @@
   <span class="md-ellipsis">
     
   
-    Value providers
+    Value provider
   
 
     
@@ -1877,7 +1877,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Value providers
+    Value provider
   
 
           </label>
@@ -1887,8 +1887,6 @@
                 
   
   
-    
-  
   
   
     
@@ -1902,15 +1900,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_1" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../block/" class="md-nav__link ">
               
   
   
@@ -1929,7 +1929,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2490,6 +2490,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2503,17 +2505,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_10" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_10" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../item/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -2532,7 +2532,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_10_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_10_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11_10">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2866,10 +2866,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list_of_block_provider_types" class="md-nav__link">
+  <a href="#list_of_item_provider_types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List of block provider types
+        List of item provider types
       
     </span>
   </a>
@@ -2896,11 +2896,8 @@
   
 
 
-<h1 id="block_provider">Block Provider</h1>
-<p class="annotate">Block providers are data objects that operate on the given context, and return a <code>CachedBlock</code>(1) based on the provided information.</p>
-<ol>
-<li><code>CachedBlock</code> is a record that contains the provided block's position, state, and entity.</li>
-</ol>
+<h1 id="item_provider">Item Provider</h1>
+<p>Item providers are data objects that operate on the given context, and return an item stack based on the provided information.</p>
 <h3 id="format">Format</h3>
 <table>
 <thead>
@@ -2916,16 +2913,19 @@
 <td><code>type</code></td>
 <td><a href="https://minecraft.wiki/w/Identifier">Identifier</a></td>
 <td style="text-align: center;"></td>
-<td>The identifier of the desired block provider.</td>
+<td>The identifier of the desired item provider type.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="list_of_block_provider_types">List of block provider types</h3>
+<details class="question" open="open">
+<summary>Implicit <code>context</code></summary>
+<p>When defining an item provider, if you specify a string, it will implicitly use the <code>context</code> item provider type.</p>
+</details>
+<h3 id="list_of_item_provider_types">List of item provider types</h3>
 <ul>
 <li><code>conditional/composite</code></li>
 <li><code>conditional</code></li>
 <li><code>context</code></li>
-<li><code>world</code></li>
 </ul>
 
 

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_providers/int/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_provider/slot/">
       
       
-        <link rel="prev" href="../float/">
+        <link rel="prev" href="../nbt/">
       
       
-        <link rel="next" href="../item/">
+        <link rel="next" href="../string/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Int Provider - neo-apoli Documentation</title>
+        <title>Slot Provider - neo-apoli Documentation</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#int_provider" class="md-skip">
+        <a href="#slot_provider" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Int Provider
+              Slot Provider
             
           </span>
         </div>
@@ -1861,7 +1861,7 @@
   <span class="md-ellipsis">
     
   
-    Value providers
+    Value provider
   
 
     
@@ -1877,7 +1877,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Value providers
+    Value provider
   
 
           </label>
@@ -2423,8 +2423,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2438,15 +2436,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_9" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_9" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../int/" class="md-nav__link ">
               
   
   
@@ -2465,7 +2465,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_9_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_9_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2624,6 +2624,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2637,17 +2639,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_12" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../slot/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -2666,7 +2666,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_12_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_12_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11_12">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2866,10 +2866,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list_of_int_provider_types" class="md-nav__link">
+  <a href="#list_of_slot_provider_types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List of int provider types
+        List of slot provider types
       
     </span>
   </a>
@@ -2896,8 +2896,11 @@
   
 
 
-<h1 id="int_provider">Int Provider</h1>
-<p>Int providers are data objects that operate on the given context, and return an integer based on the provided information.</p>
+<h1 id="slot_provider">Slot Provider</h1>
+<p class="annotate">Slot providers are data objects that operate on the given context, and return a <code>SlotAccess</code>(1) based on the provided information.</p>
+<ol>
+<li><code>SlotAccess</code> is a functional interface that essentially references an item from an entity or an inventory.</li>
+</ol>
 <h3 id="format">Format</h3>
 <table>
 <thead>
@@ -2913,81 +2916,22 @@
 <td><code>type</code></td>
 <td><a href="https://minecraft.wiki/w/Identifier">Identifier</a></td>
 <td style="text-align: center;"></td>
-<td>The identifier of the desired int provider type.</td>
+<td>The identifier of the desired slot provider type.</td>
 </tr>
 </tbody>
 </table>
 <details class="question" open="open">
-<summary>Implicit types</summary>
-<p>When defining an int provider, specifying certain data types will implicitly use a specific type:</p>
-<table>
-<thead>
-<tr>
-<th>Data Type</th>
-<th>Int Provider Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>String</td>
-<td><code>context</code></td>
-</tr>
-<tr>
-<td>Integer</td>
-<td><code>constant</code></td>
-</tr>
-</tbody>
-</table>
+<summary>Implicit <code>context</code></summary>
+<p>When defining a slot provider, if you specify a string, it will implicitly use the <code>context</code> slot provider type.</p>
 </details>
-<h3 id="list_of_int_provider_types">List of int provider types</h3>
-<div class="annotate">
+<h3 id="list_of_slot_provider_types">List of slot provider types</h3>
 <ul>
-<li><code>absolute</code>(1)</li>
-<li><code>clamped</code></li>
 <li><code>conditional/composite</code></li>
 <li><code>conditional</code></li>
-<li><code>constant</code></li>
 <li><code>context</code></li>
-<li><code>difference</code> (2)</li>
-<li><code>from_float</code></li>
-<li><code>max</code></li>
-<li><code>min</code></li>
-<li><code>nbt</code></li>
-<li><code>negate</code></li>
-<li><code>product</code> (3)</li>
-<li><code>quotient</code>(4)</li>
-<li><code>random/binomial</code></li>
-<li><code>random/uniform</code>(5)</li>
-<li><code>sum</code>(6)</li>
-<li><code>weighted</code></li>
-<li><code>adjacent_blocks</code></li>
-<li><code>blocks_colliding_box</code></li>
-<li><code>blocks_in_radius</code></li>
-<li><code>blocks_intersecting_box</code></li>
-<li><code>effect/amplifier</code></li>
-<li><code>entities_in_radius</code></li>
-<li><code>entity/active_effects</code></li>
-<li><code>equipped_enchantment_level</code></li>
-<li><code>item/count</code></li>
-<li><code>item/count/max</code></li>
-<li><code>item/fuel</code></li>
-<li><code>key/pressed_ticks</code></li>
-<li><code>key/pressed_time</code></li>
-<li><code>light_level</code></li>
-<li><code>player/food</code></li>
-<li><code>power/cooldown/remaining_ticks</code></li>
-<li><code>slot_id</code></li>
-<li><code>time</code></li>
+<li><code>block</code></li>
+<li><code>entity</code></li>
 </ul>
-</div>
-<ol>
-<li>Aliases: <code>abs</code></li>
-<li>Aliases: <code>sub</code>, <code>diff</code>, <code>subtract</code></li>
-<li>Aliases: <code>mul</code>, <code>multiply</code></li>
-<li>Aliases: <code>div</code>, <code>divide</code></li>
-<li>Aliases: <code>rand</code>, <code>random</code></li>
-<li>Aliases: <code>add</code>, <code>addition</code></li>
-</ol>
 
 
 

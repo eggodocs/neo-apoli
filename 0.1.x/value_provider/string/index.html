@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_providers/entity/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/value_provider/string/">
       
       
-        <link rel="prev" href="../effect/">
+        <link rel="prev" href="../slot/">
       
       
-        <link rel="next" href="../float/">
+        <link rel="next" href="../vec3/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Entity Provider - neo-apoli Documentation</title>
+        <title>String Provider - neo-apoli Documentation</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#entity_provider" class="md-skip">
+        <a href="#string_provider" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Entity Provider
+              String Provider
             
           </span>
         </div>
@@ -1861,7 +1861,7 @@
   <span class="md-ellipsis">
     
   
-    Value providers
+    Value provider
   
 
     
@@ -1877,7 +1877,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Value providers
+    Value provider
   
 
           </label>
@@ -2289,8 +2289,6 @@
                 
   
   
-    
-  
   
   
     
@@ -2304,15 +2302,17 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_7" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_7" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="./" class="md-nav__link md-nav__link--active">
+            <a href="../entity/" class="md-nav__link ">
               
   
   
@@ -2331,7 +2331,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_7_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_11_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2691,6 +2691,8 @@
                 
   
   
+    
+  
   
   
     
@@ -2704,17 +2706,15 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11_13" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_13" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../string/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   
@@ -2733,7 +2733,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_13_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_13_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11_13">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2866,10 +2866,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#list_of_entity_provider_types" class="md-nav__link">
+  <a href="#list_of_string_provider_types" class="md-nav__link">
     <span class="md-ellipsis">
       
-        List of entity provider types
+        List of string provider types
       
     </span>
   </a>
@@ -2896,8 +2896,8 @@
   
 
 
-<h1 id="entity_provider">Entity Provider</h1>
-<p>Entity providers are data objects that operate on the given context, and return an entity based on the provided information.</p>
+<h1 id="string_provider">String Provider</h1>
+<p>String providers are data objects that operate on the given context, and return a string based on the provided information.</p>
 <h3 id="format">Format</h3>
 <table>
 <thead>
@@ -2913,20 +2913,24 @@
 <td><code>type</code></td>
 <td><a href="https://minecraft.wiki/w/Identifier">Identifier</a></td>
 <td style="text-align: center;"></td>
-<td>The identifier of the desired entity provider type.</td>
+<td>The identifier of the desired string provider type.</td>
 </tr>
 </tbody>
 </table>
 <details class="question" open="open">
-<summary>Implicit <code>context</code></summary>
-<p>When defining a entity provider, if you specify a string, it will implicitly use the <code>context</code> entity provider type.</p>
+<summary>Implicit <code>constant</code></summary>
+<p>When defining a string provider, if you specify a string, it will implicitly use the <code>constant</code> string provider type.</p>
 </details>
-<h3 id="list_of_entity_provider_types">List of entity provider types</h3>
+<h3 id="list_of_string_provider_types">List of string provider types</h3>
 <ul>
 <li><code>conditional/composite</code></li>
 <li><code>conditional</code></li>
-<li><code>context</code></li>
-<li><code>selector</code></li>
+<li><code>constant</code></li>
+<li><code>join</code></li>
+<li><code>entity/uuid</code></li>
+<li><code>nbt</code></li>
+<li><code>from_int</code></li>
+<li><code>from_float</code></li>
 </ul>
 
 
