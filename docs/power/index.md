@@ -46,7 +46,7 @@ Field | Type | Default | Description
 - [`inventory`](types/inventory.md)
 - [`modify/air/speed`](types/modify_air_speed.md)
 - [`modify/attribute/vanilla`](types/modify_attribute_vanilla.md)
-- `modify/attribute`
+- [`modify/attribute`](types/modify_attribute.md)
 - `modify/block/harvestable`
 - `modify/block/selectable`
 - `modify/block/use`

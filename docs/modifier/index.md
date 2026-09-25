@@ -9,8 +9,8 @@ Field | Type | Default | Description
 ------|------|:-------:|------------
 `type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired modifier type.
 `phase` | Phase | | Determines when the modifier will be applied.
-`modifiers` | Array of Modifiers | *optional* | If specified, these modifiers will be applied first before the this modifier is applied.
-`amount` | Float Provider | | The amount of the modifier.
+`modifiers` | Array of [Modifiers](index.md) | *optional* | If specified, these modifiers will be applied first before the this modifier is applied.
+`amount` | [Float Provider](../providers/float/index.md) | | The amount of the modifier.
 
 
 ??? note "About fields"
@@ -18,11 +18,17 @@ Field | Type | Default | Description
     The table contains the common fields used by modifiers. Some modifiers may not have the same fields, so make sure to check!
 
 
-### List of modifier types.
+!!! question "Modifier phases"
 
-!!! question inline end "Order of modifiers"
+    Modifiers are applied in the following two phases, listed in order:
 
-    The modifiers are applied at the order they're displayed in this list, with `add` being first and `set` being last.
+    Phase | Description
+    ------|------------
+    `base` | Determines that the base value will be modified.
+    `total` | Determines that the total value will be modified.
+
+
+### List of modifier types
 
 - `add`
 - `multiply`
@@ -32,3 +38,7 @@ Field | Type | Default | Description
 - `min`
 - `max`
 - `set`
+
+!!! question "Order of modifiers"
+
+    The modifiers are applied in the order they're listed in, where `add` is applied first and `set` is applied last.
