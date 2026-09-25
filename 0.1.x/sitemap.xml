@@ -25,6 +25,10 @@
          <lastmod>2026-09-25</lastmod>
     </url>
     <url>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/data/attributed_modifier/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
          <loc>https://eggodocs.github.io/neo-apoli/0.1.x/data/key_reference/</loc>
          <lastmod>2026-09-25</lastmod>
     </url>
@@ -106,6 +110,10 @@
     </url>
     <url>
          <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/types/modify_air_speed/</loc>
+         <lastmod>2026-09-25</lastmod>
+    </url>
+    <url>
+         <loc>https://eggodocs.github.io/neo-apoli/0.1.x/power/types/modify_attribute_vanilla/</loc>
          <lastmod>2026-09-25</lastmod>
     </url>
     <url>
