@@ -46,7 +46,7 @@ Field | Type | Default | Description
 - [`cooldown`](types/cooldown.md)
 - [`crafting_recipe`](types/crafting_recipe.md)
 - [`dummy`](types/dummy.md)
-- `hud_render`
+- [`hud_render`](types/hud_render.md)
 - `inventory`
 - `modify/air/speed`
 - `modify/attribute/vanilla`
