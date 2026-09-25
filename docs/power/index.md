@@ -45,7 +45,7 @@ Field | Type | Default | Description
 - [`callback/projectile/land`](types/callback_projectile_land.md)
 - [`cooldown`](types/cooldown.md)
 - [`crafting_recipe`](types/crafting_recipe.md)
-- `dummy`
+- [`dummy`](types/dummy.md)
 - `hud_render`
 - `inventory`
 - `modify/air/speed`
