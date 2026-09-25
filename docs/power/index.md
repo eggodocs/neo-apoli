@@ -47,7 +47,7 @@ Field | Type | Default | Description
 - [`crafting_recipe`](types/crafting_recipe.md)
 - [`dummy`](types/dummy.md)
 - [`hud_render`](types/hud_render.md)
-- `inventory`
+- [`inventory`](types/inventory.md)
 - `modify/air/speed`
 - `modify/attribute/vanilla`
 - `modify/attribute`
