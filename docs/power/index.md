@@ -50,7 +50,7 @@ Field | Type | Default | Description
 - [`modify/block/harvestable`](types/modify_block_harvestable.md)
 - [`modify/block/selectable`](types/modify_block_selectable.md)
 - [`modify/block/use`](types/modify_block_use.md)
-- `modify/climbing`
+- [`modify/climbing`](types/modify_climbing.md)
 - `modify/damage/dealt`
 - `modify/damage/invulnerability`
 - `modify/damage/taken`
