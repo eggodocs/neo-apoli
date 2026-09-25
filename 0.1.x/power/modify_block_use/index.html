@@ -664,6 +664,8 @@
       
         
       
+        
+      
     
     
     
@@ -749,6 +751,34 @@
     
   
     Block Use Phase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data/crafting_recipe_entry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Crafting Recipe Entry
   
 
     
@@ -2995,45 +3025,45 @@
 <tr>
 <th>Field</th>
 <th>Type</th>
-<th>Default</th>
+<th style="text-align: center;">Default</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>action</code></td>
-<td><a href="../../action/index.md">Action</a></td>
-<td><em>optional</em></td>
+<td><a class="autorefs autorefs-internal" href="../../action/#action">Action</a></td>
+<td style="text-align: center;"><em>optional</em></td>
 <td>If specified, this action will be executed when the player interacts with a block.</td>
 </tr>
 <tr>
 <td><code>result</code></td>
-<td><a href="../../data/interaction_result.md">Interaction Result</a></td>
-<td><code>"success"</code></td>
+<td><a class="autorefs autorefs-internal" href="../../data/interaction_result/#interaction_result">Interaction Result</a></td>
+<td style="text-align: center;"><code>"success"</code></td>
 <td>Determines the result of the player's interaction with a block.</td>
 </tr>
 <tr>
 <td><code>directions</code></td>
-<td>Array of <a href="../../data/direction.md">Directions</a></td>
-<td><code>["down", "up", "north", "south", "west", "east"]</code></td>
+<td>Array of <a class="autorefs autorefs-internal" href="../../data/direction/#direction">Directions</a></td>
+<td style="text-align: center;"><code>["down", "up", "north", "south", "west", "east"]</code></td>
 <td>Determines whether to trigger instances of this type when the player interacts with the specified sides of a block.</td>
 </tr>
 <tr>
 <td><code>hands</code></td>
-<td>Array of <a href="../../data/hand.md">Hands</a></td>
-<td><code>["main_hand", "off_hand"]</code></td>
+<td>Array of <a class="autorefs autorefs-internal" href="../../data/hand/#hand">Hands</a></td>
+<td style="text-align: center;"><code>["main_hand", "off_hand"]</code></td>
 <td>Determines whether to trigger instances of this type when the player interacts with a block with the specified hands.</td>
 </tr>
 <tr>
 <td><code>use_phases</code></td>
-<td>Array of <a href="../../data/block_use_phase.md">Block Use Phases</a></td>
-<td><code>["block", "block_with_item"]</code></td>
+<td>Array of <a class="autorefs autorefs-internal" href="../../data/block_use_phase/#block_use_phase">Block Use Phases</a></td>
+<td style="text-align: center;"><code>["block", "block_with_item"]</code></td>
 <td>Determines whether to trigger instances of this type when the player's interaction with a block enters the specified phases.</td>
 </tr>
 <tr>
 <td><code>priority</code></td>
 <td>Integer</td>
-<td><code>0</code></td>
+<td style="text-align: center;"><code>0</code></td>
 <td>Determines the order of which instances of this type is checked and executed.</td>
 </tr>
 </tbody>
