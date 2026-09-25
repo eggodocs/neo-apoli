@@ -24,7 +24,7 @@ Type ID: `neo-apoli:callback/projectile/land`
         `neo-apoli:landed_on_block` | The block that was hit by the projectile.
         `neo-apoli:landed_on_side` | The side of the block the projectile hit.
         `neo-apoli:projectile_entity` | The projectile entity itself.
-        `neo-apoli:actor_entity` | The owner of the proejctile or nothing if the projectile doesn't have an owner.
+        `neo-apoli:actor_entity` | The owner of the projectile or nothing if the projectile doesn't have an owner.
 
 
 ### Format
