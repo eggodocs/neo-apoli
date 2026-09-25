@@ -6,16 +6,25 @@ Type ID: `neo-apoli:callback/projectile/land`
 
 
 !!! note "Context info"
-    
-    This power type provides the following context parameters:
 
-    Parameter | Description
-    ----------|------------
-    `neo-apoli:landed_on_block` | The block the projectile hit. **This parameter is optional.**
-    `neo-apoli:landed_on_side` | The side of the entity or block the projectile hit.
-    `neo-apoli:projectile_entity` | The projectile.
-    `neo-apoli:actor_entity` | The owner of the projectile. **This parameter is optional.**
-    `neo-apoli:target_entity` | The entity that was hit by the projectile. **This parameter is optional.**
+    This power type provides the following context parameters depending on the scenario:
+
+    === "An entity was hit"
+
+        Parameter | Description
+        ----------|------------
+        `neo-apoli:projectile_entity` | The projectile entity itself.
+        `neo-apoli:actor_entity` | The owner of the projectile or nothing if the projectile doesn't have an owner.
+        `neo-apoli:target_entity` | The entity that was hit by the projectile.
+
+    === "A block was hit"
+
+        Parameter | Description
+        ----------|------------
+        `neo-apoli:landed_on_block` | The block that was hit by the projectile.
+        `neo-apoli:landed_on_side` | The side of the block the projectile hit.
+        `neo-apoli:projectile_entity` | The projectile entity itself.
+        `neo-apoli:actor_entity` | The owner of the proejctile or nothing if the projectile doesn't have an owner.
 
 
 ### Format
