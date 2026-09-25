@@ -2483,7 +2483,34 @@
 <p>Type ID: <code>neo-apoli:callback/projectile/land</code></p>
 <div class="admonition note">
 <p class="admonition-title">Context info</p>
-<p>This power type provides the following context parameters:</p>
+<p>This power type provides the following context parameters depending on the scenario:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">An entity was hit</label><label for="__tabbed_1_2">A block was hit</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>neo-apoli:projectile_entity</code></td>
+<td>The projectile entity itself.</td>
+</tr>
+<tr>
+<td><code>neo-apoli:actor_entity</code></td>
+<td>The owner of the projectile or nothing if the projectile doesn't have an owner.</td>
+</tr>
+<tr>
+<td><code>neo-apoli:target_entity</code></td>
+<td>The entity that was hit by the projectile.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
 <table>
 <thead>
 <tr>
@@ -2494,26 +2521,25 @@
 <tbody>
 <tr>
 <td><code>neo-apoli:landed_on_block</code></td>
-<td>The block the projectile hit. <strong>This parameter is optional.</strong></td>
+<td>The block that was hit by the projectile.</td>
 </tr>
 <tr>
 <td><code>neo-apoli:landed_on_side</code></td>
-<td>The side of the entity or block the projectile hit.</td>
+<td>The side of the block the projectile hit.</td>
 </tr>
 <tr>
 <td><code>neo-apoli:projectile_entity</code></td>
-<td>The projectile.</td>
+<td>The projectile entity itself.</td>
 </tr>
 <tr>
 <td><code>neo-apoli:actor_entity</code></td>
-<td>The owner of the projectile. <strong>This parameter is optional.</strong></td>
-</tr>
-<tr>
-<td><code>neo-apoli:target_entity</code></td>
-<td>The entity that was hit by the projectile. <strong>This parameter is optional.</strong></td>
+<td>The owner of the proejctile or nothing if the projectile doesn't have an owner.</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
 </div>
 <h3 id="format">Format</h3>
 <table>
