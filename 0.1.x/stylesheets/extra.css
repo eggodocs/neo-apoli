@@ -1,3 +1,4 @@
-/* th:nth-child(-n+1) {
-    width: 24%;
-} */
+/* Content area width */
+.md-grid {
+    max-width: 90%;
+}

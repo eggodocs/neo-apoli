@@ -2659,12 +2659,10 @@
 
 <h1 id="power">Power</h1>
 <p>Powers give a certain "ability" to the entity it's granted to. The functionality of the "ability" will depend on the specified type.</p>
-<p>Custom powers can be defined as JSON/JSON5/JSONC files in the <code>data/&lt;namespace&gt;/neo-apoli/power</code> directory of a data pack.</p>
-<p>Data packs that load later with a power file with the same name and directory will replace the existing power.</p>
+<p>Custom powers can be defined as JSON/JSON5/JSONC files in the <code>data/&lt;namespace&gt;/neo-apoli/power</code> directory of a data pack. Data packs that load later with a power file with the same name and directory will replace the existing power.</p>
 <details class="note annotate" open="open">
 <summary>Powers providing context</summary>
-<p>Power types provide the context used by other context-based data objects, such as actions and conditions, for flexibility.(1)</p>
-<p>Some power types may provide more context parameters, so make sure to check the corresponding pages for your desired power type.</p>
+<p>Power types provide the context used by other context-based data objects, such as actions and conditions, for flexibility.(1) Some power types may provide more context parameters, so make sure to check the corresponding pages for your desired power type.</p>
 </details>
 <ol>
 <li>The <code>neo-apoli:this_entity</code> context parameter is also automatically provided, which refers to the entity holding the power.</li>
