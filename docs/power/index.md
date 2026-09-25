@@ -48,7 +48,7 @@ Field | Type | Default | Description
 - [`dummy`](types/dummy.md)
 - [`hud_render`](types/hud_render.md)
 - [`inventory`](types/inventory.md)
-- `modify/air/speed`
+- [`modify/air/speed`](types/modify_air_speed.md)
 - `modify/attribute/vanilla`
 - `modify/attribute`
 - `modify/block/harvestable`
