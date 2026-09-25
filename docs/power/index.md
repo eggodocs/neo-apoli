@@ -47,7 +47,7 @@ Field | Type | Default | Description
 - [`modify/air/speed`](types/modify_air_speed.md)
 - [`modify/attribute/vanilla`](types/modify_attribute_vanilla.md)
 - [`modify/attribute`](types/modify_attribute.md)
-- `modify/block/harvestable`
+- [`modify/block/harvestable`](types/modify_block_harvestable.md)
 - `modify/block/selectable`
 - `modify/block/use`
 - `modify/climbing`
