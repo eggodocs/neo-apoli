@@ -20,6 +20,11 @@ Field | Type | Default | Description
 `priority` | Integer | `0` | Determines the order of which powers of this type is checked.
 
 
+??? question "About priorities"
+
+    The instances of this type will be sorted in its **reversed** *natural order* meaning that instances that have a higher priority value will be checked first before those that have lower priority values.
+
+
 ### Example
 
 ```json
