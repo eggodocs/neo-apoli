@@ -2,9 +2,7 @@
 
 Actions are used to operate on a given context. Actions can change or affect the world and/or its entities depending on the specified type.
 
-Custom actions can be defined as JSON/JSON5/JSONC files in the `data/<namespace>/neo-apoli/action` directory of a data pack.
-
-Data packs that load later with an action file with the same name and directory will replace the existing action.
+Custom actions can be defined as JSON/JSON5/JSONC files in the `data/<namespace>/neo-apoli/action` directory of a data pack. Data packs that load later with an action file with the same name and directory will replace the existing action.
 
 
 !!! note

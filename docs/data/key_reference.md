@@ -13,7 +13,7 @@ Field | Type | Default | Description
 
 !!! question "Implicit formatting"
 
-    When defining a key reference, if a string is specified, it will automatically create a key reference which has its `continuous` field set to `false`.
+    When defining a key reference, if a string is specified, it will implicitly create a key reference which has its `continuous` field set to `false`.
 
 
 ### Example

@@ -2,15 +2,11 @@
 
 Powers give a certain "ability" to the entity it's granted to. The functionality of the "ability" will depend on the specified type.
 
-Custom powers can be defined as JSON/JSON5/JSONC files in the `data/<namespace>/neo-apoli/power` directory of a data pack.
-
-Data packs that load later with a power file with the same name and directory will replace the existing power.
+Custom powers can be defined as JSON/JSON5/JSONC files in the `data/<namespace>/neo-apoli/power` directory of a data pack. Data packs that load later with a power file with the same name and directory will replace the existing power.
 
 ???+ note annotate "Powers providing context"
 
-    Power types provide the context used by other context-based data objects, such as actions and conditions, for flexibility.(1)
-
-    Some power types may provide more context parameters, so make sure to check the corresponding pages for your desired power type.
+    Power types provide the context used by other context-based data objects, such as actions and conditions, for flexibility.(1) Some power types may provide more context parameters, so make sure to check the corresponding pages for your desired power type.
 
 
 1. The `neo-apoli:this_entity` context parameter is also automatically provided, which refers to the entity holding the power.

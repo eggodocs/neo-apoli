@@ -2,9 +2,7 @@
 
 Conditions are used to test against a given context, checking the provided information and return either a pass or fail. 
 
-Custom conditions can be defined as JSON/JSON5/JSONC files in the `data/<namespace>/neo-apoli/condition` directory of a data pack.
-
-Data packs that load later with a condition file with the same name and directory will replace the existing condition.
+Custom conditions can be defined as JSON/JSON5/JSONC files in the `data/<namespace>/neo-apoli/condition` directory of a data pack. Data packs that load later with a condition file with the same name and directory will replace the existing condition.
 
 
 !!! note
