@@ -48,7 +48,7 @@ Field | Type | Default | Description
 - [`modify/attribute/vanilla`](types/modify_attribute_vanilla.md)
 - [`modify/attribute`](types/modify_attribute.md)
 - [`modify/block/harvestable`](types/modify_block_harvestable.md)
-- `modify/block/selectable`
+- [`modify/block/selectable`](types/modify_block_selectable.md)
 - `modify/block/use`
 - `modify/climbing`
 - `modify/damage/dealt`
