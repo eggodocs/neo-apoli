@@ -6,9 +6,9 @@ An object that references a key binding, mainly used by powers to define which k
 ### Format
 
 Field | Type | Default | Description
-------|------|---------|------------
-`id` | [String Provider](../providers/string/index.md) | | The ID of the referenced key binding.
-`continuous` | [Boolean Provider](../providers/boolean/index.md) | `false` | Determines whether the the referenced key binding is held.
+------|------|:-------:|------------
+`id` | [String Provider][string_provider] | | The ID of the referenced key binding.
+`continuous` | [Boolean Provider][boolean_provider] | `false` | Determines whether the the referenced key binding is held.
 
 
 !!! question "Implicit formatting"

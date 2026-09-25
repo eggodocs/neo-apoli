@@ -20,9 +20,9 @@ Type ID: `neo-apoli:callback/block/place`
 
 Field | Type | Default | Description 
 ------|------|:-------:|-------------
-`on_place_action` | [Action](../../action/index.md) | | The action to invoke when a block is placed.
-`directions` | Array of Directions | `["down", "up", "north", "south", "west", "east"]` | Determines if the action is invoked when the block is placed at the specified sides.
-`hands` | Array of Hands | `["mainhand", "offhand"]` | Determines if the action should be invoked when the block is held and placed with the specified hands.
+`on_place_action` | [Action][action] | | The action to invoke when a block is placed.
+`directions` | Array of [Directions][direction] | `["down", "up", "north", "south", "west", "east"]` | Determines if the action is invoked when the block is placed at the specified sides.
+`hands` | Array of [Hands][hand] | `["main_hand", "off_hand"]` | Determines if the action should be invoked when the block is held and placed with the specified hands.
 `priority` | Integer | `0` | Determines the order of which powers of this type will be iterated.
 
 

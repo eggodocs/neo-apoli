@@ -6,9 +6,9 @@ Modifies whether an entity is considered climbing.
 ### Format
 
 Field | Type | Default | Description
-------|------|---------|------------
-`holding_condition` | [Condition](../../condition/index.md) | `{"type": "neo-apoli:is_entity_sneaking", "entity": "this"}` | Determines when an entity is considered holding onto a block.
-`allow_holding` | [Boolean Provider](../../providers/boolean/index.md) | `true` | Determines whether "holding" onto a block is allowed.
+------|------|:-------:|------------
+`holding_condition` | [Condition][condition] | `{"type": "neo-apoli:is_entity_sneaking", "entity": "this"}` | Determines when an entity is considered holding onto a block.
+`allow_holding` | [Boolean Provider][boolean_provider] | `true` | Determines whether "holding" onto a block is allowed.
 
 
 ### Example

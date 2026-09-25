@@ -11,7 +11,7 @@ Slot providers are data objects that operate on the given context, and return a 
 
 Field | Type | Default | Description                                       
 ------|------|:-------:|------------
-`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired slot provider type.
+`type` | [Identifier]({{ mc.identifier }}) | | The identifier of the desired slot provider type.
 
 ???+ question "Implicit `context`"
     

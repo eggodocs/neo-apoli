@@ -37,7 +37,10 @@ theme:
 plugins:
   - search
   - meta
-  - table-reader
+  - autorefs
+  - macros:
+      module_name: main
+      on_error_fail: false
 
 markdown_extensions:
   - toc:
@@ -67,4 +70,7 @@ extra_javascript:
 extra:
   version:
     provider: mike
+  mc:
+    identifier: https://minecraft.wiki/w/Identifier
+    text_component: https://minecraft.wiki/w/Text_component_format
 

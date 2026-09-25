@@ -15,12 +15,12 @@ Provides a customizable inventory where items can be stored and may or may not p
 ### Format
 
 Field | Type | Default | Description
-------|------|---------|------------
-`title` | [Text Component](https://minecraft.wiki/w/Text_component_format) | `{"translatable": "container.inventory"}` | The displayed title for the inventory's GUI.
-`menu` | [Container Menu](../../container_menu/index.md) | `"neo-apoli:generic_3x3"` | The basis that will be rendered as the inventory's GUI.
-`drop_on_death_condition` | [Condition](../../condition/index.md) | *optional* | If specified, this checks each item stack if they should be dropped when the player holding the power dies.
-`recoverable` | [Boolean Provider](../../providers/boolean/index.md) | `true` | Determines whether the item stacks can be recovered when the power is revoked.
-`key` | [Key Reference](../../data/key_reference.md) | | The referenced key binding to use for opening the inventory.
+------|------|:-------:|------------
+`title` | [Text Component]({{ mc.text_component }}) | `{"translatable": "container.inventory"}` | The displayed title for the inventory's GUI.
+`menu` | [Container Menu][container_menu] | `"neo-apoli:generic_3x3"` | The basis that will be rendered as the inventory's GUI.
+`drop_on_death_condition` | [Condition][condition] | *optional* | If specified, this checks each item stack if they should be dropped when the player holding the power dies.
+`recoverable` | [Boolean Provider][boolean_provider] | `true` | Determines whether the item stacks can be recovered when the power is revoked.
+`key` | [Key Reference][key_reference] | | The referenced key binding to use for opening the inventory.
 `priority` | Integer | `0` | Determines the priority at which power should have its inventory opened.
 
 

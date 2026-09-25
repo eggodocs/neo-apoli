@@ -10,7 +10,7 @@ Type ID: `neo-apoli:callback/power/revoked`
 
 Field | Type | Default | Description 
 ------|------|:-------:|-------------
-`action` | [Action](../../action/index.md) | | The action to invoke after the power is revoked from the entity.
+`action` | [Action][action] | | The action to invoke after the power is revoked from the entity.
 
 
 ### Example

@@ -6,9 +6,9 @@ Modifies the specified attribute with modifiers.
 ### Format
 
 Field | Type | Default | Description
-------|------|---------|------------
-`attribute` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the attribute to modify.
-`modifiers` | Array of [Modifiers](../../modifier/index.md) | | The modifiers to apply to the specified attribute.
+------|------|:-------:|------------
+`attribute` | [Identifier]({{ mc.identifier }}) | | The identifier of the attribute to modify.
+`modifiers` | Array of [Modifiers][modifier] | | The modifiers to apply to the specified attribute.
 
 
 ### Example

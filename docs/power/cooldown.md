@@ -17,9 +17,9 @@ Provides a timer to be used for powers that normally do not have a built-in cool
 ### Format
 
 Field | Type | Default | Description
-------|------|---------|------------
-`hud_element` | [HUD Element](../../hud_element/index.md) | | The HUD element to display while the cooldown is in progress.
-`cooldown` | [Int Provider](../../providers/int/index.md) | | Determines the amount of ticks the cooldown will be in progress before it can be triggered again.
+------|------|:-------:|------------
+`hud_element` | [HUD Element][hud_element] | | The HUD element to display while the cooldown is in progress.
+`cooldown` | [Int Provider][int_provider] | | Determines the amount of ticks the cooldown will be in progress before it can be triggered again.
 
 
 ### Example

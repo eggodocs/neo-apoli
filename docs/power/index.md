@@ -1,4 +1,4 @@
-#   Power
+#   Power { #power }
 
 Powers give a certain "ability" to the entity it's granted to. The functionality of the "ability" will depend on the specified type.
 
@@ -16,9 +16,9 @@ Custom powers can be defined as JSON/JSON5/JSONC files in the `data/<namespace>/
 
 Field | Type | Default | Description
 ------|------|:-------:|------------
-`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired power type.
-`name` | [Text Component](https://minecraft.wiki/w/Text_component_format) | *optional* | The display name of the power, prioritizing translations from resource packs. <br><br>If unspecified, a translatable name with the key `power.<namespace>.<path>.name` is provided.
-`description` | [Text Component](https://minecraft.wiki/w/Text_component_format) | *optional* | The display description of the power, prioritizing translations from resource packs. <br><br>If unspecified, a translatable name with the key `power.<namespace>.<path>.description` is provided.
+`type` | [Identifier]({{ mc.identifier }}) | | The identifier of the desired power type.
+`name` | [Text Component]({{ mc.text_component }}) | *optional* | The display name of the power, prioritizing translations from resource packs. <br><br>If unspecified, a translatable name with the key `power.<namespace>.<path>.name` is provided.
+`description` | [Text Component]({{ mc.text_component }}) | *optional* | The display description of the power, prioritizing translations from resource packs. <br><br>If unspecified, a translatable name with the key `power.<namespace>.<path>.description` is provided.
 `hidden` | Boolean | `false` | Determines whether the power should be hidden.
     
 

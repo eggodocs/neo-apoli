@@ -12,7 +12,7 @@ Container menus are types that indicate how a GUI (graphical user interface) sho
 
 Field | Type | Default | Description
 ------|------|:-------:|------------
-`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired container menu type.
+`type` | [Identifier]({{ mc.identifier }}) | | The identifier of the desired container menu type.
 
 
 ## List of container menu types

@@ -7,7 +7,7 @@ Colors are objects used to provide an integer from a context object. The provide
 
 Field | Type | Default | Description
 ------|------|:-------:|------------
-`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired color type.
+`type` | [Identifier]({{ mc.identifier }}) | | The identifier of the desired color type.
 
 
 !!! question "Implicit `rgba`"

@@ -14,7 +14,7 @@ Custom conditions can be defined as JSON/JSON5/JSONC files in the `data/<namespa
 
 Field | Type | Default | Description
 ------|------|:-------:|------------
-`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired condition type.
+`type` | [Identifier]({{ mc.identifier }}) | | The identifier of the desired condition type.
 
 
 ### List of condition types

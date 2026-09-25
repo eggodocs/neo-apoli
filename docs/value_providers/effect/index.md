@@ -7,7 +7,7 @@ Effect providers are data objects that operate on the given context, and return 
 
 Field | Type | Default | Description
 ------|------|:-------:|------------
-`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired effect provider type.
+`type` | [Identifier]({{ mc.identifier }}) | | The identifier of the desired effect provider type.
 
 
 ???+ question "Implicit `context`"

@@ -6,9 +6,9 @@ An object that contains an attribute and its modifier.
 ### Format
 
 Field | Type | Default | Description
-------|------|---------|------------
-`attribute` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the attribute to modify.
-`id` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the modifier. This can be arbitrary.
+------|------|:-------:|------------
+`attribute` | [Identifier]({{ mc.identifier }}) | | The identifier of the attribute to modify.
+`id` | [Identifier]({{ mc.identifier }}) | | The identifier of the modifier. This can be arbitrary.
 `amount` | Float | | The amount of the modifier.
 `operation` | String | | Determines how the modifier modifies the value.
 

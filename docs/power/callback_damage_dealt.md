@@ -23,7 +23,7 @@ Type ID: `neo-apoli:callback/block/place`
 
 Field | Type | Default | Description 
 ------|------|:-------:|------------
-`on_hit_action` | [Action](../../action/index.md) | | The action to invoke when damage is dealt to an entity.
+`on_hit_action` | [Action][action] | | The action to invoke when damage is dealt to an entity.
 `priority` | Integer | `0` | Determines the order of which powers of this type will be iterated.
 
 

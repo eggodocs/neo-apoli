@@ -14,7 +14,7 @@ Some comparisons use a comparator, while others rely on the compared objects' eq
 
 Field | Type | Default | Description
 ------|------|:-------:|------------
-`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired comparison type.
+`type` | [Identifier]({{ mc.identifier }}) | | The identifier of the desired comparison type.
 
 
 ### List of comparison types

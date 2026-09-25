@@ -13,7 +13,7 @@ Type ID: `neo-apoli:callback/power/removed`
 
 Field | Type | Default | Description 
 ------|------|:-------:|-------------
-`action` | [Action](../../action/index.md) | | The action to invoke after the power is "removed" from the entity.
+`action` | [Action][action] | | The action to invoke after the power is "removed" from the entity.
 
 
 ### Example

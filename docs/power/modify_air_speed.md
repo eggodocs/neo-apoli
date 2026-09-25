@@ -6,8 +6,8 @@ Modifies the entity's air horizontal speed.
 ### Format
 
 Field | Type | Default | Description
-------|------|---------|------------
-`modifiers` | Array of [Modifiers](../../modifier/index.md) | | The modifiers to apply to the entity's air horizontal speed.
+------|------|:-------:|------------
+`modifiers` | Array of [Modifiers][modifier] | | The modifiers to apply to the entity's air horizontal speed.
 
 
 ### Example

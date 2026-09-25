@@ -18,12 +18,12 @@ Modifies the interaction of a block.
 ### Format
 
 Field | Type | Default | Description
-------|------|---------|------------
-`action` | [Action](../../action/index.md) | *optional* | If specified, this action will be executed when the player interacts with a block.
-`result` | [Interaction Result](../../data/interaction_result.md) | `"success"` | Determines the result of the player's interaction with a block.
-`directions` | Array of [Directions](../../data/direction.md) | `["down", "up", "north", "south", "west", "east"]` | Determines whether to trigger instances of this type when the player interacts with the specified sides of a block.
-`hands` | Array of [Hands](../../data/hand.md) | `["main_hand", "off_hand"]` | Determines whether to trigger instances of this type when the player interacts with a block with the specified hands.
-`use_phases` | Array of [Block Use Phases](../../data/block_use_phase.md) | `["block", "block_with_item"]` | Determines whether to trigger instances of this type when the player's interaction with a block enters the specified phases.
+------|------|:-------:|------------
+`action` | [Action][action] | *optional* | If specified, this action will be executed when the player interacts with a block.
+`result` | [Interaction Result][interaction_result] | `"success"` | Determines the result of the player's interaction with a block.
+`directions` | Array of [Directions][direction] | `["down", "up", "north", "south", "west", "east"]` | Determines whether to trigger instances of this type when the player interacts with the specified sides of a block.
+`hands` | Array of [Hands][hand] | `["main_hand", "off_hand"]` | Determines whether to trigger instances of this type when the player interacts with a block with the specified hands.
+`use_phases` | Array of [Block Use Phases][block_use_phase] | `["block", "block_with_item"]` | Determines whether to trigger instances of this type when the player's interaction with a block enters the specified phases.
 `priority` | Integer | `0` | Determines the order of which instances of this type is checked and executed.
 
 

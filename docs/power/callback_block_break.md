@@ -19,8 +19,8 @@ Type ID: `neo-apoli:callback/block/break`
 
 Field | Type | Default | Description
 ------|------|:-------:|------------
-`on_break_action` | [Action](../../action/index.md) | | The action to invoke when a block is broken.
-`only_when_harvested` | [Boolean Provider](../../providers/boolean/index.md) | `false` | Determines whether the action should only be invoked when the block is broken with its correct tool.
+`on_break_action` | [Action][action] | | The action to invoke when a block is broken.
+`only_when_harvested` | [Boolean Provider][boolean_provider] | `false` | Determines whether the action should only be invoked when the block is broken with its correct tool.
 `priority` | Integer | `0` | Determines the order of which powers of this type will be iterated.
 
 

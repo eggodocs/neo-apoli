@@ -7,7 +7,7 @@ NBT providers are data objects that operate on the given context, and return an 
 
 Field | Type | Default | Description
 ------|------|:-------:|------------
-`type`| [Identifier](https://minecraft.wiki/w/Identifier) |  | The identifier of the desired NBT provider type.
+`type`| [Identifier]({{ mc.identifier }}) |  | The identifier of the desired NBT provider type.
 
 
 ???+ question "Implicit `constant`"

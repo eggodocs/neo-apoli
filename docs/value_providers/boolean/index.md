@@ -7,7 +7,7 @@ Boolean providers are data objects that operate on the given context, and return
 
 Field | Type | Default | Description
 ------|------|:-------:|------------
-`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired boolean provider.
+`type` | [Identifier]({{ mc.identifier }}) | | The identifier of the desired boolean provider.
 
 
 ### List of boolean provider types

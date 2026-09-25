@@ -7,10 +7,10 @@ Modifiers are objects used to specify how a floating point value is modified.
 
 Field | Type | Default | Description
 ------|------|:-------:|------------
-`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired modifier type.
+`type` | [Identifier]({{ mc.identifier }}) | | The identifier of the desired modifier type.
 `phase` | Phase | | Determines when the modifier will be applied.
-`modifiers` | Array of [Modifiers](index.md) | *optional* | If specified, these modifiers will be applied first before the this modifier is applied.
-`amount` | [Float Provider](../providers/float/index.md) | | The amount of the modifier.
+`modifiers` | Array of [Modifiers][modifier] | *optional* | If specified, these modifiers will be applied first before the this modifier is applied.
+`amount` | [Float Provider][float_provider] | | The amount of the modifier.
 
 
 ??? note "About fields"

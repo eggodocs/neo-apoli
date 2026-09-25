@@ -6,8 +6,8 @@ Renders the specified HUD elements.
 ### Format
 
 Field | Type | Default | Description
-------|------|---------|------------
-`hud_elements` | Array of [HUD Elements](../../hud_element/index.md) | | The HUD elements to render.
+------|------|:-------:|------------
+`hud_elements` | Array of [HUD Elements][hud_element] | | The HUD elements to render.
 
 
 !!! warning

@@ -31,7 +31,7 @@ Type ID: `neo-apoli:callback/projectile/land`
 
 Field | Type | Default | Description 
 ------|------|:-------:|-------------
-`action` | [Action](../../action/index.md) | | The action to invoke when the entity's projectile hits a block or an entity.
+`action` | [Action][action] | | The action to invoke when the entity's projectile hits a block or an entity.
 
 
 ### Example

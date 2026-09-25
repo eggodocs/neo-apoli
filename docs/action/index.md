@@ -1,4 +1,4 @@
-# Action
+#   Action
 
 Actions are used to operate on a given context. Actions can change or affect the world and/or its entities depending on the specified type.
 
@@ -14,7 +14,7 @@ Custom actions can be defined as JSON/JSON5/JSONC files in the `data/<namespace>
 
 Field | Type | Default | Description
 ------|------|:-------:|------------
-`type` | [Identifier](https://minecraft.wiki/w/Identifier) | | The identifier of the desired action type.
+`type` | [Identifier]({{ mc.identifier }}) | | The identifier of the desired action type.
 
 
 ???+ question "Implicit `sequence`"

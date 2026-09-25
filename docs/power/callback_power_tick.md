@@ -9,10 +9,10 @@ Type ID: `neo-apoli:callback/power/tick`
 
 Field | Type | Default | Description 
 ------|------|:-------:|-------------
-`action` | [Action](../../action/index.md) | *optional* | If specified, this action will be invoked every interval ticks.
-`rising_action` | [Action](../../action/index.md) | *optional* | If specified, this action will be invoked in the first interval tick the power was active.
-`falling_action` | [Action](../../action/index.md) | *optional* | If specified, this action will be invoked in the first interval tick the power was inactive.
-`interval` | [Int Provider](../../providers/int/index.md)  | `20` | Determines the period for which this power will tick. The provided integer is automatically clamped within the range of 0 and 2,147,483,647.
+`action` | [Action][action] | *optional* | If specified, this action will be invoked every interval ticks.
+`rising_action` | [Action][action] | *optional* | If specified, this action will be invoked in the first interval tick the power was active.
+`falling_action` | [Action][action] | *optional* | If specified, this action will be invoked in the first interval tick the power was inactive.
+`interval` | [Int Provider][int_provider]  | `20` | Determines the period for which this power will tick. The provided integer is automatically clamped within the range of 0 and 2,147,483,647.
 
 
 ### Example

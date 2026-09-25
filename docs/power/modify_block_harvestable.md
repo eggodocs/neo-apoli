@@ -15,8 +15,8 @@ Modifies whether a block should be harvestable by the player holding the power o
 ### Format
 
 Field | Type | Default | Description
-------|------|---------|------------
-`allow` | [Boolean Provider](../../providers/boolean/index.md) | | Determines whether the player is allowed to harvest the block.
+------|------|:-------:|------------
+`allow` | [Boolean Provider][boolean_provider] | | Determines whether the player is allowed to harvest the block.
 `priority` | Integer | `0` | Determines the order of which powers of this type is checked.
 
 
