@@ -49,7 +49,7 @@ Field | Type | Default | Description
 - [`hud_render`](types/hud_render.md)
 - [`inventory`](types/inventory.md)
 - [`modify/air/speed`](types/modify_air_speed.md)
-- `modify/attribute/vanilla`
+- [`modify/attribute/vanilla`](types/modify_attribute_vanilla.md)
 - `modify/attribute`
 - `modify/block/harvestable`
 - `modify/block/selectable`
