@@ -25,8 +25,8 @@ Field | Type | Default | Description
 
 
 ??? question "About priorities"
-    
-    The instances of this type will be sorted in its *natural order* meaning that instances that have a lower priority value will be executed first before those that have higher priority values.
+
+    The instances of this type will be sorted in its **reversed** *natural order* meaning that instances that have a higher priority value will be executed first before those that have lower priority values.
 
 
 ### Example

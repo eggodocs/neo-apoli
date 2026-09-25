@@ -13,7 +13,7 @@ Field | Type | Default | Description
 
 ??? question "About priorities"
 
-    The recipes of this type will prioritize powers that have a higher priority value over powers that have a lower priority value. This means that the power that has the highest priority value will have its recipe provided.
+    If multiple instances of this type has the same recipe identifier, the instance that has the highest priority value will have its recipe provided.
 
 
 ### Example
