@@ -49,7 +49,7 @@ Field | Type | Default | Description
 - [`modify/attribute`](types/modify_attribute.md)
 - [`modify/block/harvestable`](types/modify_block_harvestable.md)
 - [`modify/block/selectable`](types/modify_block_selectable.md)
-- `modify/block/use`
+- [`modify/block/use`](types/modify_block_use.md)
 - `modify/climbing`
 - `modify/damage/dealt`
 - `modify/damage/invulnerability`
