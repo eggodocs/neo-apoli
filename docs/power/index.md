@@ -53,7 +53,7 @@ Field | Type | Default | Description
 - [`modify/climbing`](modify_climbing.md)
 - [`modify/damage/dealt`](modify_damage_dealt.md)
 - [`modify/damage/invulnerability`](modify_damage_invulnerability.md)
-- `modify/damage/taken`
+- [`modify/damage/taken`](modify_damage_taken.md)
 - `modify/effect/duration`
 - `modify/effect/immunity`
 - `modify/elytra/flight`
