@@ -2,6 +2,7 @@
 
 Invokes an action every time the power ticks.
 
+
 Type ID: `neo-apoli:callback/power/tick`
 
 

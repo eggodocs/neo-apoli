@@ -3,6 +3,9 @@
 Modifies the interaction of a block.
 
 
+Type ID: `neo-apoli:modify/block/use`
+
+
 !!! note "Context info"
 
     This power type provides the following context parameters:

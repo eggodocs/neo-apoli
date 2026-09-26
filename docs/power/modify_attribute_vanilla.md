@@ -3,6 +3,9 @@
 Modifies the specified attributes with vanilla modifiers.
 
 
+Type ID: `neo-apoli:modify/attribute/vanilla`
+
+
 ### Format
 
 Field | Type | Default | Description

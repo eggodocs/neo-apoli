@@ -2,6 +2,7 @@
 
 Invokes an action when a projectile hits a block or an entity.
 
+
 Type ID: `neo-apoli:callback/projectile/land`
 
 

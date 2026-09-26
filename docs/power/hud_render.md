@@ -3,6 +3,9 @@
 Renders the specified HUD elements.
 
 
+Type ID : `neo-apoli:hud_render`
+
+
 ### Format
 
 Field | Type | Default | Description

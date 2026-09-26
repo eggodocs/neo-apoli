@@ -3,6 +3,9 @@
 Does nothing. Mainly serves as a placeholder for implementations that are implemented via Java code or by other data-driven powers.
 
 
+Type ID: `neo-apoli:dummy`
+
+
 ### Format
 
 *No additional fields.*

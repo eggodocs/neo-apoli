@@ -2,6 +2,7 @@
 
 Invokes an action upon the player waking up.
 
+
 Type ID: `neo-apoli:callback/player/wake_up`
 
 

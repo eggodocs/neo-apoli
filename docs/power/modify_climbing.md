@@ -3,6 +3,9 @@
 Modifies whether an entity is considered climbing.
 
 
+Type ID: `neo-apoli:modify/climbing`
+
+
 ### Format
 
 Field | Type | Default | Description

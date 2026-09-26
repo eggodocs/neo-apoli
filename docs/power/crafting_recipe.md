@@ -3,6 +3,9 @@
 Provides a crafting recipe that can only be crafted by the player holding the power.
 
 
+Type ID: `neo-apoli:crafting_recipe`
+
+
 ### Format
 
 Field | Type | Default | Description

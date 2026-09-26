@@ -2,6 +2,7 @@
 
 Invokes an action upon the player respawning.
 
+
 Type ID: `neo-apoli:callback/player/respawned`
 
 

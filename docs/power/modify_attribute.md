@@ -3,6 +3,9 @@
 Modifies the specified attribute with modifiers.
 
 
+Type ID: `neo-apoli:modify/attribute`
+
+
 ### Format
 
 Field | Type | Default | Description

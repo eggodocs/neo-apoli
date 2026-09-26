@@ -3,6 +3,9 @@
 Modifies the entity's air horizontal speed.
 
 
+Type ID: `neo-apoli:modify/air/speed`
+
+
 ### Format
 
 Field | Type | Default | Description
