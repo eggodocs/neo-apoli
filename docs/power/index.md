@@ -51,7 +51,7 @@ Field | Type | Default | Description
 - [`modify/block/selectable`](modify_block_selectable.md)
 - [`modify/block/use`](modify_block_use.md)
 - [`modify/climbing`](modify_climbing.md)
-- `modify/damage/dealt`
+- [`modify/damage/dealt`](modify_damage_dealt.md)
 - `modify/damage/invulnerability`
 - `modify/damage/taken`
 - `modify/effect/duration`
