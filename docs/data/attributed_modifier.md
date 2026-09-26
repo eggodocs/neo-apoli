@@ -9,8 +9,8 @@ Field | Type | Default | Description
 ------|------|:-------:|------------
 `attribute` | [Identifier]({{ mc.identifier }}) | | The identifier of the attribute to modify.
 `id` | [Identifier]({{ mc.identifier }}) | | The identifier of the modifier. This can be arbitrary.
-`amount` | Float | | The amount of the modifier.
-`operation` | String | | Determines how the modifier modifies the value.
+`amount` | [Float][float] | | The amount of the modifier.
+`operation` | [String][string] | | Determines how the modifier modifies the value.
 
 
 !!! question "Operations"

@@ -7,7 +7,7 @@ Modifies the specified attributes with vanilla modifiers.
 
 Field | Type | Default | Description
 ------|------|:-------:|------------
-`modifiers` | Array of [Attributed Modifiers][attributed_modifier] | | The vanilla modifiers with attributes to modify.
+`modifiers` | [Array][array] of [Attributed Modifiers][attributed_modifier] | | The vanilla modifiers with attributes to modify.
 
 
 ### Example

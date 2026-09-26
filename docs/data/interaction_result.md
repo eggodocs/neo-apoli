@@ -1,6 +1,6 @@
 #   Interaction Result
 
-A string that indicates the result of an interaction. Mainly used for when players interact with a block or entity.
+A [string][string] that indicates the result of an interaction. Mainly used for when players interact with a block or entity.
 
 
 ### List of values

@@ -12,7 +12,7 @@ Field | Type | Default | Description
 
 !!! question "Implicit `rgba`"
 
-    When defining a color, if a string is specified, it will implicitly use the `rgba` color type.
+    When defining a color, if a [string][string] is specified, it will implicitly use the `rgba` color type.
 
 
 ### List of color types

@@ -21,7 +21,7 @@ Field | Type | Default | Description
 ------|------|:-------:|------------
 `on_break_action` | [Action][action] | | The action to invoke when a block is broken.
 `only_when_harvested` | [Boolean Provider][boolean_provider] | `false` | Determines whether the action should only be invoked when the block is broken with its correct tool.
-`priority` | Integer | `0` | Determines the order of which powers of this type will be iterated.
+`priority` | [Integer][integer] | `0` | Determines the order of which powers of this type will be iterated.
 
 
 ??? question "About priorities"

@@ -9,7 +9,7 @@ Field | Type | Default | Description
 ------|------|:-------:|------------
 `type` | [Identifier]({{ mc.identifier }}) | | The identifier of the desired modifier type.
 `phase` | Phase | | Determines when the modifier will be applied.
-`modifiers` | Array of [Modifiers][modifier] | *optional* | If specified, these modifiers will be applied first before the this modifier is applied.
+`modifiers` | [Array][array] of [Modifiers][modifier] | *optional* | If specified, these modifiers will be applied first before the this modifier is applied.
 `amount` | [Float Provider][float_provider] | | The amount of the modifier.
 
 

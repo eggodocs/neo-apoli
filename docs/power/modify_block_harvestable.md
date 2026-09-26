@@ -17,7 +17,7 @@ Modifies whether a block should be harvestable by the player holding the power o
 Field | Type | Default | Description
 ------|------|:-------:|------------
 `allow` | [Boolean Provider][boolean_provider] | | Determines whether the player is allowed to harvest the block.
-`priority` | Integer | `0` | Determines the order of which powers of this type is checked.
+`priority` | [Integer][integer] | `0` | Determines the order of which powers of this type is checked.
 
 
 ??? question "About priorities"

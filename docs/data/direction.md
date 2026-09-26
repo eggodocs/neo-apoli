@@ -1,6 +1,6 @@
 #   Direction
 
-A string that indicates the direction of an axis.
+A [string][string] that indicates the direction of an axis.
 
 
 ### Values

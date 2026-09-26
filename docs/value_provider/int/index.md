@@ -1,6 +1,6 @@
 #   Int Provider
 
-Int providers are data objects that operate on the given context, and return an integer based on the provided information.
+Int providers are data objects that operate on the given context, and return an [integer][integer] based on the provided information.
 
 
 ### Format
@@ -16,8 +16,8 @@ Field | Type | Default | Description
 
     Data Type | Int Provider Type
     ----------|------------------
-    String | `context`
-    Integer | `constant`
+    [String][string] | `context`
+    [Integer][integer] | `constant`
 
 
 ### List of int provider types

@@ -12,7 +12,7 @@ Field | Type | Default | Description
 
 ???+ question "Implicit `context`"
 
-    When defining a entity provider, if you specify a string, it will implicitly use the `context` entity provider type.
+    When defining a entity provider, if you specify a [string][string], it will implicitly use the `context` entity provider type.
 
 
 ### List of entity provider types

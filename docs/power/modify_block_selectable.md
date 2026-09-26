@@ -17,7 +17,7 @@ Modifies whether the player holding the power or not should be able to break or 
 Field | Type | Default | Description
 ------|------|:-------:|------------
 `allow` | [Boolean Provider][boolean_provider] | | Determines whether to allow the player to break or interact with the block.
-`priority` | Integer | `0` | Determines the order of which powers of this type is checked.
+`priority` | [Integer][integer] | `0` | Determines the order of which powers of this type is checked.
 
 
 ??? question "About priorities"

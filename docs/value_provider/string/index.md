@@ -1,6 +1,6 @@
 # String Provider
 
-String providers are data objects that operate on the given context, and return a string based on the provided information.
+String providers are data objects that operate on the given context, and return a [string][string] based on the provided information.
 
 
 ### Format
@@ -10,7 +10,7 @@ Field | Type | Default | Description
 
 ???+ question "Implicit `constant`"
     
-    When defining a string provider, if you specify a string, it will implicitly use the `constant` string provider type.
+    When defining a string provider, if you specify a [string][string], it will implicitly use the `constant` string provider type.
 
 
 ### List of string provider types

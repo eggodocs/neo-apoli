@@ -1,6 +1,6 @@
 #   Block Use Phase
 
-A string that indicates the phase of which the player is using a block.
+A [string][string] that indicates the phase of which the player is using a block.
 
 
 !!! note

@@ -8,7 +8,7 @@ Provides a crafting recipe that can only be crafted by the player holding the po
 Field | Type | Default | Description
 ------|------|:-------:|------------
 `recipe` | [Crafting Recipe Entry](../data/crafting_recipe_entry.md) | | The crafting recipe to provide.
-`priority` | Integer | `0` | Determines the order of which recipes of this type will be prioritized.
+`priority` | [Integer][integer] | `0` | Determines the order of which recipes of this type will be prioritized.
 
 
 ??? question "About priorities"

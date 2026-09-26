@@ -8,7 +8,7 @@ HUD elements are objects that are displayed on the player's screen. This may var
 Field | Type | Default | Description
 ------|------|:-------:|------------
 `type` | [Identifier]({{ mc.identifier }}) | | The identifier of the desired HUD element type.
-`order` | Integer | | Determines the order at which the element is rendered.
+`order` | [Integer][integer] | | Determines the order at which the element is rendered.
 
 
 ??? question "About orders"

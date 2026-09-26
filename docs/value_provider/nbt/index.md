@@ -12,7 +12,7 @@ Field | Type | Default | Description
 
 ???+ question "Implicit `constant`"
 
-    When defining an NBT provider, if you specify a string or NBT, it will implicitly use the `constant` NBT provider type.
+    When defining an NBT provider, if you specify a [string][string] or NBT, it will implicitly use the `constant` NBT provider type.
 
 
 ### List of NBT provider types

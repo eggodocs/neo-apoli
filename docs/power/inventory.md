@@ -21,7 +21,7 @@ Field | Type | Default | Description
 `drop_on_death_condition` | [Condition][condition] | *optional* | If specified, this checks each item stack if they should be dropped when the player holding the power dies.
 `recoverable` | [Boolean Provider][boolean_provider] | `true` | Determines whether the item stacks can be recovered when the power is revoked.
 `key` | [Key Reference][key_reference] | | The referenced key binding to use for opening the inventory.
-`priority` | Integer | `0` | Determines the priority at which power should have its inventory opened.
+`priority` | [Integer][integer] | `0` | Determines the priority at which power should have its inventory opened.
 
 
 ??? question "About priorities"

@@ -8,7 +8,7 @@ Modifies the specified attribute with modifiers.
 Field | Type | Default | Description
 ------|------|:-------:|------------
 `attribute` | [Identifier]({{ mc.identifier }}) | | The identifier of the attribute to modify.
-`modifiers` | Array of [Modifiers][modifier] | | The modifiers to apply to the specified attribute.
+`modifiers` | [Array][array] of [Modifiers][modifier] | | The modifiers to apply to the specified attribute.
 
 
 ### Example

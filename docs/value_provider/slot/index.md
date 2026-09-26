@@ -15,7 +15,7 @@ Field | Type | Default | Description
 
 ???+ question "Implicit `context`"
     
-    When defining a slot provider, if you specify a string, it will implicitly use the `context` slot provider type.
+    When defining a slot provider, if you specify a [string][string], it will implicitly use the `context` slot provider type.
 
 
 ### List of slot provider types

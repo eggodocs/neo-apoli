@@ -12,7 +12,7 @@ Field | Type | Default | Description
 
 ???+ question "Implicit `context`"
 
-    When defining a direction provider, if you specify a string, it will implicitly use the `context` direction provider type.
+    When defining a direction provider, if you specify a [string][string], it will implicitly use the `context` direction provider type.
 
 
 ### List of effect provider types

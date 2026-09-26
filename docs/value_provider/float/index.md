@@ -16,8 +16,8 @@ Field | Type | Default | Description
 
     Data Type | Float Provider Type
     ----------|------------------
-    String | `context`
-    Float | `constant`
+    [String][string] | `context`
+    [Float][float] | `constant`
 
 
 ### List of float provider types

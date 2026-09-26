@@ -12,7 +12,7 @@ Field | Type | Default | Description
 
 ???+ question "Implicit `context`"
 
-    When defining an item provider, if you specify a string, it will implicitly use the `context` item provider type.
+    When defining an item provider, if you specify a [string][string], it will implicitly use the `context` item provider type.
 
 
 ### List of item provider types
