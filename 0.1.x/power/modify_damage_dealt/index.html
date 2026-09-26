@@ -3150,6 +3150,44 @@
 <h1 id="modify_damage_dealt">Modify Damage Dealt</h1>
 <p>Modifies the damage dealt by the entity holding the power to another entity.</p>
 <p>Type ID: <code>neo-apoli:modify/damage/dealt</code></p>
+<div class="admonition note">
+<p class="admonition-title">Context info</p>
+<p>This power type provides the following context parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>neo-apoli:actor_entity</code></td>
+<td>The attacker entity (the entity holding the power.)</td>
+</tr>
+<tr>
+<td><code>neo-apoli:target_entity</code></td>
+<td>The entity that was attacked.</td>
+</tr>
+<tr>
+<td><code>neo-apoli:dealt_damage/source</code></td>
+<td>The damage source dealt to the attacked entity.</td>
+</tr>
+<tr>
+<td><code>neo-apoli:dealt_damage/amount</code></td>
+<td>The amount of damage dealt to the attacked entity.</td>
+</tr>
+<tr>
+<td><code>neo-apoli:damaging_entity</code></td>
+<td>The projectile used for the attack (or the attacker if no projectiles are used.)</td>
+</tr>
+<tr>
+<td><code>neo-apoli:direct_damaging_entity</code></td>
+<td>The owner of the projectile used for the attack (or the attacker if no projectiles are used.)</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h3 id="format">Format</h3>
 <table>
 <thead>
