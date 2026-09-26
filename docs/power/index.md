@@ -52,7 +52,7 @@ Field | Type | Default | Description
 - [`modify/block/use`](modify_block_use.md)
 - [`modify/climbing`](modify_climbing.md)
 - [`modify/damage/dealt`](modify_damage_dealt.md)
-- `modify/damage/invulnerability`
+- [`modify/damage/invulnerability`](modify_damage_invulnerability.md)
 - `modify/damage/taken`
 - `modify/effect/duration`
 - `modify/effect/immunity`
