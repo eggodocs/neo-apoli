@@ -6,6 +6,20 @@ Modifies the damage dealt by the entity holding the power to another entity.
 Type ID: `neo-apoli:modify/damage/dealt`
 
 
+!!! note "Context info"
+
+    This power type provides the following context parameters:
+
+    Parameter | Description
+    ----------|------------
+    `neo-apoli:actor_entity` | The attacker entity (the entity holding the power.)
+    `neo-apoli:target_entity` | The entity that was attacked.
+    `neo-apoli:dealt_damage/source` | The damage source dealt to the attacked entity.
+    `neo-apoli:dealt_damage/amount` | The amount of damage dealt to the attacked entity.
+    `neo-apoli:damaging_entity` | The projectile used for the attack (or the attacker if no projectiles are used.)
+    `neo-apoli:direct_damaging_entity` | The owner of the projectile used for the attack (or the attacker if no projectiles are used.)
+
+
 ### Format
 
 Field | Type | Default | Description
