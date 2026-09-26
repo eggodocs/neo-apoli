@@ -1,4 +1,4 @@
-#   Power { #power }
+#   Power
 
 Powers give a certain "ability" to the entity it's granted to. The functionality of the "ability" will depend on the specified type.
 
