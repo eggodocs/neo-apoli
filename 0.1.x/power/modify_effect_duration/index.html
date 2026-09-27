@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/power/modify_block_use/">
+        <link rel="canonical" href="https://eggodocs.github.io/neo-apoli/0.1.x/power/modify_effect_duration/">
       
       
-        <link rel="prev" href="../modify_block_selectable/">
+        <link rel="prev" href="../modify_damage_taken/">
       
       
-        <link rel="next" href="../modify_climbing/">
+        <link rel="next" href="../../value_provider/block/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Modify Block Use - neo-apoli Documentation</title>
+        <title>Modify Effect Duration - neo-apoli Documentation</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modify_block_use" class="md-skip">
+        <a href="#modify_effect_duration" class="md-skip">
           Skip to content
         </a>
       
@@ -145,7 +145,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Modify Block Use
+              Modify Effect Duration
             
           </span>
         </div>
@@ -1886,37 +1886,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Modify Block Use
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../modify_block_use/" class="md-nav__link">
         
   
   
@@ -1932,59 +1905,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Format
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#history" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        History
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2106,10 +2026,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../modify_effect_duration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modify Effect Duration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2125,6 +2072,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Format
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        History
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -3240,9 +3240,9 @@
   
 
 
-<h1 id="modify_block_use">Modify Block Use</h1>
-<p>Modifies the interaction of a block.</p>
-<p>Type ID: <code>neo-apoli:modify/block/use</code></p>
+<h1 id="modify_effect_duration">Modify Effect Duration</h1>
+<p>Modifies the duration of a status effect inflicted on the entity holding the power.</p>
+<p>Type ID: <code>neo-apoli:modify/effect/duration</code></p>
 <div class="admonition note">
 <p class="admonition-title">Context info</p>
 <p>This power type provides the following context parameters:</p>
@@ -3255,20 +3255,16 @@
 </thead>
 <tbody>
 <tr>
-<td><code>neo-apoli:used_block</code></td>
-<td>The block which the player interacted with.</td>
+<td><code>neo-apoli:actor_entity</code></td>
+<td>The entity that inflicted the status effect.</td>
 </tr>
 <tr>
-<td><code>neo-apoli:used_side</code></td>
-<td>The side of the block the player interacted with.</td>
+<td><code>neo-apoli:target_entity</code></td>
+<td>The entity holding the power.</td>
 </tr>
 <tr>
-<td><code>neo-apoli:used_item_slot</code></td>
-<td>The item slot used for interacting with the player.</td>
-</tr>
-<tr>
-<td><code>neo-apoli:used_item</code></td>
-<td>The item stack used for interacting with the player.</td>
+<td><code>neo-apoli:applied_effect</code></td>
+<td>The inflicted status effect.</td>
 </tr>
 </tbody>
 </table>
@@ -3285,74 +3281,31 @@
 </thead>
 <tbody>
 <tr>
-<td><code>action</code></td>
-<td><a class="autorefs autorefs-internal" href="../../action/#action">Action</a></td>
-<td style="text-align: center;"><em>optional</em></td>
-<td>If specified, this action will be executed when the player interacts with a block.</td>
-</tr>
-<tr>
-<td><code>result</code></td>
-<td><a class="autorefs autorefs-internal" href="../../data/interaction_result/#interaction_result">Interaction Result</a></td>
-<td style="text-align: center;"><code>"success"</code></td>
-<td>Determines the result of the player's interaction with a block.</td>
-</tr>
-<tr>
-<td><code>directions</code></td>
-<td><a class="autorefs autorefs-internal" href="../../data/array/#array">Array</a> of <a class="autorefs autorefs-internal" href="../../data/direction/#direction">Directions</a></td>
-<td style="text-align: center;"><code>["down", "up", "north", "south", "west", "east"]</code></td>
-<td>Determines whether to trigger instances of this type when the player interacts with the specified sides of a block.</td>
-</tr>
-<tr>
-<td><code>hands</code></td>
-<td><a class="autorefs autorefs-internal" href="../../data/array/#array">Array</a> of <a class="autorefs autorefs-internal" href="../../data/hand/#hand">Hands</a></td>
-<td style="text-align: center;"><code>["main_hand", "off_hand"]</code></td>
-<td>Determines whether to trigger instances of this type when the player interacts with a block with the specified hands.</td>
-</tr>
-<tr>
-<td><code>use_phases</code></td>
-<td><a class="autorefs autorefs-internal" href="../../data/array/#array">Array</a> of <a class="autorefs autorefs-internal" href="../../data/block_use_phase/#block_use_phase">Block Use Phases</a></td>
-<td style="text-align: center;"><code>["block", "block_with_item"]</code></td>
-<td>Determines whether to trigger instances of this type when the player's interaction with a block enters the specified phases.</td>
-</tr>
-<tr>
-<td><code>priority</code></td>
-<td><a class="autorefs autorefs-internal" href="../../data/integer/#integer">Integer</a></td>
-<td style="text-align: center;"><code>0</code></td>
-<td>Determines the order of which instances of this type is checked and executed.</td>
+<td><code>modifiers</code></td>
+<td><a class="autorefs autorefs-internal" href="../../data/array/#array">Array</a> of <a class="autorefs autorefs-internal" href="../../modifier/#modifier">Modifiers</a></td>
+<td style="text-align: center;"></td>
+<td>The modifiers to apply to the duration of an inflicted status effect.</td>
 </tr>
 </tbody>
 </table>
-<details class="question">
-<summary>About priorities</summary>
-<p>The instances of this type will be sorted in its <strong>reversed</strong> <em>natural order</em> meaning that instances that have a higher priority value will be checked and executed first before those that have lower priority values. </p>
-<p>This instance also has specific rules with specific values of priorities:</p>
-<ul>
-<li>If the priority value is equal or greater than 1, the instance will be executed and override the result of the interaction.</li>
-<li>If the priority value is equal or less than -1, the instance will only be executed if the previous interaction result is a pass.</li>
-<li>If the priority value is equal to 0, the instance will be executed and will <strong>not</strong> override the end result.</li>
-</ul>
-</details>
 <h3 id="example">Example</h3>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:modify/block/use"</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">"action"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:execute_command"</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nt">"source"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:entity"</span><span class="p">,</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"this"</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="p">},</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="nt">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tellraw @s {\"text\": \"You cannot open chests made of copper!\", \"color\": \"red\"}"</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">},</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nt">"result"</span><span class="p">:</span><span class="w"> </span><span class="s2">"fail"</span><span class="p">,</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">    </span><span class="nt">"priority"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="nt">"active_condition"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:is_block_in_tag"</span><span class="p">,</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="nt">"tag"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#minecraft:copper_chests"</span><span class="p">,</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="nt">"block"</span><span class="p">:</span><span class="w"> </span><span class="s2">"used_block"</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="p">}</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="p">}</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:modify/effect/duration"</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">"modifiers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">            </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:multiply_additive"</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">            </span><span class="nt">"phase"</span><span class="p">:</span><span class="w"> </span><span class="s2">"total"</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="nt">"amount"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.0</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">    </span><span class="p">],</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="nt">"active_condition"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"neo-apoli:is_effect_of_type"</span><span class="p">,</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="nt">"effect_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"minecraft:poison"</span><span class="p">,</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="nt">"effect"</span><span class="p">:</span><span class="w"> </span><span class="s2">"applied_effect"</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">}</span>
 </code></pre></div>
-<p>This example prevents the player from opening a copper chest (or any blocks included in the <code>#minecraft:copper_chests</code> tag).</p>
+<p>This example doubles the duration of the Poison status effect.</p>
 <h3 id="history">History</h3>
 <table>
     <tr>
