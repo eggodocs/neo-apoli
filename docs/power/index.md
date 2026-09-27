@@ -54,7 +54,7 @@ Field | Type | Default | Description
 - [`modify/damage/dealt`](modify_damage_dealt.md)
 - [`modify/damage/invulnerability`](modify_damage_invulnerability.md)
 - [`modify/damage/taken`](modify_damage_taken.md)
-- `modify/effect/duration`
+- [`modify/effect/duration`](modify_effect_duration.md)
 - `modify/effect/immunity`
 - `modify/elytra/flight`
 - `modify/elytra/render`
