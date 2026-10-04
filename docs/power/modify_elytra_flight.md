@@ -1,4 +1,4 @@
-#   Modify Effect Duration
+#   Modify Elytra Flight
 
 Modifies whether to allow the entity holding the power to glide.
 
