@@ -56,7 +56,7 @@ Field | Type | Default | Description
 - [`modify/damage/taken`](modify_damage_taken.md)
 - [`modify/effect/duration`](modify_effect_duration.md)
 - [`modify/effect/immunity`](modify_effect_immunity.md)
-- `modify/elytra/flight`
+- [`modify/elytra/flight`](modify_elytra_flight.md)
 - `modify/elytra/render`
 - `modify/entity/type_tag`
 - `modify/exhaustion`
